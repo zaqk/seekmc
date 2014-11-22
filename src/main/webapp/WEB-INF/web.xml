@@ -18,6 +18,11 @@
     <servlet-name>hello</servlet-name>
     <servlet-class>com.example.HelloServlet</servlet-class>
   </servlet>
+  
+   <servlet>
+    <servlet-name>connection</servlet-name>
+    <servlet-class>com.servlet.Connection</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>hello</servlet-name>

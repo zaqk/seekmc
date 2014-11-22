@@ -14,7 +14,7 @@
 
 
 
-<form action="/MajesticX2/Connection" method="post">
+<form action="/Connection" method="post">
 
 Experimental:<input type="checkbox" name="attributePreference" value="experimental"/>
 

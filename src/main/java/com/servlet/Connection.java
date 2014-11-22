@@ -12,7 +12,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+//import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,7 +25,7 @@ import com.converter.DecoderRing;
 /**
  * Servlet implementation class Connection
  */
-@WebServlet("/Connection")
+//@WebServlet("/connection")
 public class Connection extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -28,6 +28,11 @@
     <servlet-name>hello</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>connection</servlet-name>
+    <url-pattern>/connection</url-pattern>
+  </servlet-mapping>
 
       <resource-ref>
     <description>DB Connection</description>

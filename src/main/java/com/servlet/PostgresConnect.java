@@ -1,6 +1,8 @@
 package com.servlet;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 import java.util.logging.Logger;
 
 import javax.servlet.ServletConfig;
@@ -9,6 +11,9 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.db.Db;
+
 /**
  * Servlet implementation class PostgresConnectionn
  */
@@ -20,11 +25,17 @@ public class PostgresConnect extends HttpServlet {
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ServletOutputStream out = response.getOutputStream();
-        
-        out.write("Hello, Kyle".getBytes());
-        out.flush();
-        out.close();
+			Db db = new Db();
+			
+			try {
+				java.sql.Connection con = db.getConnection();
+			} catch (URISyntaxException e) {
+				e.printStackTrace();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			
 	}
 
 }

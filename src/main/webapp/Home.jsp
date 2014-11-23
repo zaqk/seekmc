@@ -14,7 +14,7 @@
 
 
 
-<form action="/connection" method="post">
+<form action="/p" method="post">
 
 Experimental:<input type="checkbox" name="attributePreference" value="experimental"/>
 

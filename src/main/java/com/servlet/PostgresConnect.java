@@ -33,7 +33,7 @@ public class PostgresConnect extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 	     out.print("outside of try loop");
-	      
+	     Class.forName("com.mysql.jdbc.Driver");
 			try {
 				java.sql.Connection con = Db.getConnection();
 

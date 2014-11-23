@@ -14,12 +14,7 @@
 
     <dependencies>
     <!-- JDBC -->
-     <dependency>
-		<groupId>postgresql</groupId>
-		<artifactId>postgresql</artifactId>
-		<version>9.3-1102.jdbc41</version>
-	</dependency>
-    
+
     
         <!-- Servlet API -->
         <dependency>

@@ -50,8 +50,7 @@ public class PostgresConnect extends HttpServlet {
 	            out.print("<br/>");
 	            out.print("<b>Attributes: </b>");
 	            out.print("<br/>");
-	            out.print("<br/>");
-	            {	
+	            out.print("<br/>");	
 	            	
 	            	
 	                out.print("<tr>");
@@ -64,7 +63,7 @@ public class PostgresConnect extends HttpServlet {
 	                out.print("</tr>"); 
 	                out.print("<br/>"); 
 	                out.print("<br/>");
-	            }
+	            
 	        		out.print("</body></html>"); 
 				
 				

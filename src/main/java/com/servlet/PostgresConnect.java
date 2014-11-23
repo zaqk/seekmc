@@ -26,16 +26,21 @@ public class PostgresConnect extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			Db db = new Db();
-			
+	        ServletOutputStream out = response.getOutputStream();
+	        
+	      
 			try {
 				java.sql.Connection con = db.getConnection();
+
 			} catch (URISyntaxException e) {
 				e.printStackTrace();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 			
-			
+			  out.write("Wow, it actually worked, can't be this easy.".getBytes());
+		        out.flush();
+		        out.close();
 	}
 
 }

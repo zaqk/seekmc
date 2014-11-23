@@ -70,8 +70,10 @@ public class PostgresConnect extends HttpServlet {
 				
 			} catch (URISyntaxException e) {
 				e.printStackTrace();
+				out.print("urisyntaxerror");
 			} catch (SQLException e) {
 				e.printStackTrace();
+				out.print("sqlexception");
 			}
 
 	}

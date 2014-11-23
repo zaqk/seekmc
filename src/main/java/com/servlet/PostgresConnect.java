@@ -37,7 +37,7 @@ public class PostgresConnect extends HttpServlet {
 			try {
 				java.sql.Connection con = Db.getConnection();
 
-				
+				out.print("inside of try loop");
 	            
 
 	            out.print("<center><h1>F U 2</h1></center>");

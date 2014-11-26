@@ -3,6 +3,7 @@ package com.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -40,7 +41,16 @@ public class PostgresConnect extends HttpServlet {
 			out.print("failed to load postresql driver");
 		}
 			try {
-				java.sql.Connection con = Db.getConnection();
+				final String URL = "postgresql://yygnxivbnbtjqp:hhipD09VgH29_AwFgJiKV-PcI_@ec2-54-243-245-159.compute-1.amazonaws.com:5432/d3f68tgt8qdh4u";   
+				final String USERNAME = "yygnxivbnbtjqp";
+				final String PASSWORD = "hhipD09VgH29_AwFgJiKV-PcI_"; 
+			    //URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+			    //String username = dbUri.getUserInfo().split(":")[0];
+			    //String password = dbUri.getUserInfo().split(":")[1];
+			    //String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + dbUri.getPath();
+
+			    java.sql.Connection con = DriverManager.getConnection(URL, USERNAME,PASSWORD);
 
 				out.print("inside of try loop");
 	            
@@ -72,10 +82,10 @@ public class PostgresConnect extends HttpServlet {
 				
 				
 				
-			} catch (URISyntaxException e) {
+			} catch (SQLException e) {
 				e.printStackTrace();
 				out.print("urisyntaxerror");
-			} catch (SQLException e) {
+			} catch (ClassCastException e) {
 				e.printStackTrace();
 				out.print("sqlexception");
 			}

@@ -19,7 +19,7 @@ public class Db {
 	    //String password = dbUri.getUserInfo().split(":")[1];
 	    //String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + dbUri.getPath();
 
-	    return DriverManager.getConnection(URL, USERNAME,PASSWORD);
+	    return DriverManager.getConnection(URL);
 		
 
 		

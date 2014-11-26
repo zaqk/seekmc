@@ -10,7 +10,7 @@ import java.sql.*;
 public class Db {
 	public static Connection getConnection() throws URISyntaxException, SQLException {
 		
-		final String URL = "postgresql://yygnxivbnbtjqp:hhipD09VgH29_AwFgJiKV-PcI_@ec2-54-243-245-159.compute-1.amazonaws.com:5432/d3f68tgt8qdh4u?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";   
+		final String URL = "postgresql://yygnxivbnbtjqp:hhipD09VgH29_AwFgJiKV-PcI_@ec2-54-243-245-159.compute-1.amazonaws.com:5432/d3f68tgt8qdh4u?ssl=true";   
 		final String USERNAME = "yygnxivbnbtjqp";
 		final String PASSWORD = "hhipD09VgH29_AwFgJiKV-PcI_"; 
 	    //URI dbUri = new URI(System.getenv("DATABASE_URL"));

@@ -154,7 +154,7 @@ public class PostgresConnect extends HttpServlet {
          	
          }
          Statement stmt = con.createStatement();
-         String query = "select * from webshop.`database`"
+         String query = "select * from main"
          + "WHERE experimental =" 
          + qryExperimental + " " + "AND" + " "
          + "house_influenced =" + " "

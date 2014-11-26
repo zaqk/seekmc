@@ -199,7 +199,7 @@ public class PostgresConnect extends HttpServlet {
          + qryHeavy_Vocal_Manipulation + " " + "AND" + " "
          + "instrumental = " + " "
          + qryInstrumental + " " + "AND" + " "
-         + "count = count";
+         + "id = id";
          
          ResultSet rs = stmt.executeQuery(query);
          

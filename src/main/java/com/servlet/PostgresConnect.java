@@ -36,50 +36,39 @@ public class PostgresConnect extends HttpServlet {
 	     out.print("outside of try loop");
 	     try {
 			Class.forName("org.postgresql.Driver");
+			Connection con = Db.getConnection();
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 			out.print("failed to load postresql driver");
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-			try {
-				Connection con = Db.getConnection();
+			out.print("inside of try loop");
+			
 
-				out.print("inside of try loop");
-	            
-
-	            out.print("<center><h1>F U 2</h1></center>");
-	            out.print("<html><body>");
-	            out.print("<br/>");
-	            out.print("<b>Attributes: </b>");
-	            out.print("<br/>");
-	            out.print("<br/>");	
-	            	
-	            	
-	                out.print("<tr>");
-	                out.print("Song Name: </b>" + "</td>");
-	                out.print("</tr><br/>");
-	                out.print("&nbsp;&nbsp;&nbsp;&nbsp;");
-	                out.print("<b>Link: </b> &nbsp;&nbsp;");
-	                out.print("<tr>");
-	                out.print("<td>yo</td>");
-	                out.print("</tr>"); 
-	                out.print("<br/>"); 
-	                out.print("<br/>");
-	            
-	        		out.print("</body></html>"); 
+			out.print("<center><h1>F U 2</h1></center>");
+			out.print("<html><body>");
+			out.print("<br/>");
+			out.print("<b>Attributes: </b>");
+			out.print("<br/>");
+			out.print("<br/>");	
 				
 				
-				
-				
-				
-				
-				
-			} catch (URISyntaxException e) {
-				e.printStackTrace();
-				out.print("urisyntaxerror");
-			} catch (SQLException e) {
-				e.printStackTrace();
-				out.print("sqlexception");
-			}
+			    out.print("<tr>");
+			    out.print("Song Name: </b>" + "</td>");
+			    out.print("</tr><br/>");
+			    out.print("&nbsp;&nbsp;&nbsp;&nbsp;");
+			    out.print("<b>Link: </b> &nbsp;&nbsp;");
+			    out.print("<tr>");
+			    out.print("<td>yo</td>");
+			    out.print("</tr>"); 
+			    out.print("<br/>"); 
+			    out.print("<br/>");
+			
+				out.print("</body></html>");
 
 	}
 

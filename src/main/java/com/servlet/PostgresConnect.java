@@ -79,7 +79,7 @@ public class PostgresConnect extends HttpServlet {
          
          
          	if(attributePreferencesList.contains(DecoderRing.EXPERIMENTAL)){
-         		qryExperimental = "1";
+         		qryExperimental = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HOUSE_INFLUENCED)){
          		qryHouse_Influenced = "\'1\'";
@@ -156,7 +156,7 @@ public class PostgresConnect extends HttpServlet {
          Statement stmt = con.createStatement();
          String query = "SELECT * FROM main WHERE "//SELECT * FROM d3f68tgt8qdh4u.main
          + "experimental = " 
-         + qryExperimental; //+ " " + "AND" + " "
+         + qryExperimental + ";"; //+ " " + "AND" + " "
          //+ "house_influenced = " + " "
          //+ qryHouse_Influenced + " " + "AND" + " "
          //+ "hip_hop_influenced = " + " "

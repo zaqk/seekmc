@@ -154,9 +154,9 @@ public class PostgresConnect extends HttpServlet {
          	
          }
          Statement stmt = con.createStatement();
-         String query = "SELECT * FROM main";//SELECT * FROM d3f68tgt8qdh4u.main
-         //+ "experimental = " 
-         //+ qryExperimental + " " + "AND" + " "
+         String query = "SELECT * FROM main WHERE"//SELECT * FROM d3f68tgt8qdh4u.main
+         + "experimental = " 
+         + qryExperimental; //+ " " + "AND" + " "
          //+ "house_influenced = " + " "
          //+ qryHouse_Influenced + " " + "AND" + " "
          //+ "hip_hop_influenced = " + " "

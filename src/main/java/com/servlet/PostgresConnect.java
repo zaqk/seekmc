@@ -82,67 +82,67 @@ public class PostgresConnect extends HttpServlet {
          		qryExperimental = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HOUSE_INFLUENCED)){
-         		qryHouse_Influenced = "\'1\'";
+         		qryHouse_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HIP_HOP_INFLUENCED)){
-         		qryHip_Hop_Influenced = "\'1\'";
+         		qryHip_Hop_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.INDIE_INFLUENCED)){
-         		qryIndie_Influenced = "\'1\'";
+         		qryIndie_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.DEEP_HOUSE)){
-         		qryDeep_House = "\'1\'";
+         		qryDeep_House = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HIP_HOP)){
-         		qryHip_Hop = "\'1\'";
+         		qryHip_Hop = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.INDIE)){
-         		qryIndie = "\'1\'";
+         		qryIndie = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HEAVY_SUB_BASS)){
-         		qryHeavy_Sub_Bass = "\'1\'";
+         		qryHeavy_Sub_Bass = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.POPPY)){
-         		qryPoppy = "\'1\'";
+         		qryPoppy = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.ENERGETIC)){
-         		qryEnergetic = "\'1\'";
+         		qryEnergetic = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.CALM)){
-         		qryCalm = "\'1\'";
+         		qryCalm = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.AGGRESSIVE)){
-         		qryAggressive = "\'1\'";
+         		qryAggressive = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.ETHEREAL)){
-         		qryEthereal = "\'1\'";
+         		qryEthereal = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.JAZZ_INFLUENCED)){
-         		qryJazz_Influenced = "\'1\'";
+         		qryJazz_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.TRAP_INFLUENCED)){
-         		qryTrap_Influenced = "\'1\'";
+         		qryTrap_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.RNB_INFLUENCED)){
-         		qryRnb_Influenced = "\'1\'";
+         		qryRnb_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.FUNK_INFLUENCED)){
-         		qryFunk_Influenced = "\'1\'";
+         		qryFunk_Influenced = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.OLD_SCHOOL_VIBES)){
-         		qryOld_School_Vibes = "\'1\'";
+         		qryOld_School_Vibes = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.MALE_VOCALS)){
-         		qryMale_Vocals = "\'1\'";
+         		qryMale_Vocals = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.FEMALE_VOCALS)){
-         		qryFemale_Vocals = "\'1\'";
+         		qryFemale_Vocals = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HEAVY_VOCAL_MANIPULATION)){
-         		qryHeavy_Vocal_Manipulation = "\'1\'";
+         		qryHeavy_Vocal_Manipulation = "1::bit";
          	}
          	if(attributePreferencesList.contains(DecoderRing.INSTRUMENTAL)){
-         		qryInstrumental = "\'1\'";
+         		qryInstrumental = "1::bit";
          	}
          	
          } else {
@@ -156,9 +156,9 @@ public class PostgresConnect extends HttpServlet {
          Statement stmt = con.createStatement();
          String query = "SELECT * FROM main WHERE "//SELECT * FROM d3f68tgt8qdh4u.main
          + "experimental = " 
-         + qryExperimental + ";"; //+ " " + "AND" + " "
-         //+ "house_influenced = " + " "
-         //+ qryHouse_Influenced + " " + "AND" + " "
+         + qryExperimental +  " " + "AND" + " "
+         + "house_influenced = " + " "
+         + qryHouse_Influenced +";";//+ " " + "AND" + " "
          //+ "hip_hop_influenced = " + " "
          //+ qryHip_Hop_Influenced + " " + "AND" + " "
          //+ "indie_influenced = " + " "

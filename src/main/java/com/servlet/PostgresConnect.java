@@ -79,7 +79,7 @@ public class PostgresConnect extends HttpServlet {
          
          
          	if(attributePreferencesList.contains(DecoderRing.EXPERIMENTAL)){
-         		qryExperimental = "\'1\'";
+         		qryExperimental = "1";
          	}
          	if(attributePreferencesList.contains(DecoderRing.HOUSE_INFLUENCED)){
          		qryHouse_Influenced = "\'1\'";

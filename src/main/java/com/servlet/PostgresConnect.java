@@ -215,8 +215,9 @@ public class PostgresConnect extends HttpServlet {
          
          
          out = response.getWriter();
-         out.print("<center><h1>Matching Songs</h1></center>");
+         
          out.print("<html><body>");
+         out.print("<center><h1>Matching Songs</h1></center>");
          //out.print(query);
          out.print("<br/>");
          out.print("<b>Attributes: </b>");

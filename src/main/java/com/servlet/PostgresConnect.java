@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.bean.ResultSetBean;
 import com.converter.DecoderRing;
 import com.db.Db;
 
@@ -70,9 +71,9 @@ public class PostgresConnect extends HttpServlet {
          String [] attributePreferences = request.getParameterValues("attributePreference");
          
          
-         response.sendRedirect("/Search.jsp");
          
-         /* if(attributePreferences.length != 0){
+         
+          if(attributePreferences.length != 0){
          	
          	//response.sendRedirect("/MajesticX2/Search.jsp");
          	//this line makes submit button submit to Search page
@@ -147,6 +148,9 @@ public class PostgresConnect extends HttpServlet {
          		qryInstrumental = "1::bit";
          	}
          	
+         	
+         	
+         	
          } else {
          	out = response.getWriter();
          	out.print("<html><body>");
@@ -205,6 +209,26 @@ public class PostgresConnect extends HttpServlet {
          
          ResultSet rs = stmt.executeQuery(query);
          
+         
+         
+         ResultSetBean rsBean = new ResultSetBean();
+         
+         rsBean.setResultSet(rs);
+         
+       /*  while(rs.next()){
+        	 
+        	 //rsBean.addToSongNameList(rs.getString("song_name"));
+        	 
+        	// rsBean.addToLinkList(rs.getString("link"));
+        	 
+        	 ResultSetBean.songNameList.add(rs.getString("song_name"));
+        	 
+        	 ResultSetBean.linkList.add( rs.getString("link"));
+         }
+         */
+        
+         response.sendRedirect("/Search.jsp");
+         /*
          
         
          

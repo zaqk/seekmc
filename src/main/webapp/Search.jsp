@@ -9,24 +9,27 @@
 </head>
 <body>
 Search
+<table>
 <% 
 int i = 0;
 ResultSetBean rsBean = new ResultSetBean();
 
-
 while(rsBean.next()){ %>
-
 <tr>
-<td><b><%= i %>. Song Name: </b> <%= rsBean.getString("song_name") %></td>
-</tr>
+<td>
+<b><%= i %>. Song Name: </b> <%= rsBean.getString("song_name") %>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<b>Link: </b> &nbsp;&nbsp;
-<tr>
-<td><a href =" <%= rsBean.getString("link") %> "> <%= rsBean.getString("link") %>"</a></td>
+</td>
 </tr>
+<tr>
+<td>
+<b>Link: </b>&nbsp;&nbsp;</td>
+<td><a href =" <%= rsBean.getString("link") %> "> <%= rsBean.getString("link") %></a>
 <br/>
-<br/>
-<% i++; } %>
+</td>
+</tr>
+<% i ++; } %>
+</table>
 </body>
 </html>

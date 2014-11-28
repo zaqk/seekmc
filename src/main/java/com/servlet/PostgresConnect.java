@@ -70,7 +70,9 @@ public class PostgresConnect extends HttpServlet {
          String [] attributePreferences = request.getParameterValues("attributePreference");
          
          
-         if(attributePreferences.length != 0){
+         response.sendRedirect("/Search.jsp");
+         
+         /* if(attributePreferences.length != 0){
          	
          	//response.sendRedirect("/MajesticX2/Search.jsp");
          	//this line makes submit button submit to Search page
@@ -204,7 +206,7 @@ public class PostgresConnect extends HttpServlet {
          ResultSet rs = stmt.executeQuery(query);
          
          
-         
+        
          
 
          
@@ -244,7 +246,7 @@ public class PostgresConnect extends HttpServlet {
              out.print("<br/>");
              i++;
          }
-     		out.print("</body></html>"); 
+     		out.print("</body></html>"); */
      		
 	     } catch (ClassNotFoundException e1) {
 				e1.printStackTrace();

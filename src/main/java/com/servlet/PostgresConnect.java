@@ -211,9 +211,15 @@ public class PostgresConnect extends HttpServlet {
          
          
          
-         ResultSetBean rsBean = new ResultSetBean();
+         //ResultSetBean rsBean = new ResultSetBean();
          
-         rsBean.setResultSet(rs);
+         //rsBean.setResultSet(rs);
+         
+        // while(rs.next()){
+        	 
+        	//rsBean rs.getString("song_name");
+        	 
+         //}
          
        /*  while(rs.next()){
         	 
@@ -227,8 +233,8 @@ public class PostgresConnect extends HttpServlet {
          }
          */
         
-         response.sendRedirect("/Search.jsp");
-         /*
+         //response.sendRedirect("/Search.jsp");
+         
          
         
          
@@ -270,7 +276,7 @@ public class PostgresConnect extends HttpServlet {
              out.print("<br/>");
              i++;
          }
-     		out.print("</body></html>"); */
+     		out.print("</body></html>");
      		
 	     } catch (ClassNotFoundException e1) {
 				e1.printStackTrace();

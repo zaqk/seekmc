@@ -21,7 +21,9 @@ ResultSetBean rsBean = new ResultSetBean();
 String[] songNameArray = new String[rsBean.getSongNameListLength()];
 
 String[] linkArray = new String[rsBean.getLinkListLength()];
-
+%>
+<%= songNameArray.length %>
+<% 
 for(int i = 0; i != songNameArray.length; i++){
 %>
 <tr>
@@ -38,9 +40,7 @@ for(int i = 0; i != songNameArray.length; i++){
 <br/>
 </td>
 </tr>
-<% 
-n++;
-} %>
+<% n++; } %>
 </table>
 </body>
 </html>

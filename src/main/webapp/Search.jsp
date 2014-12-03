@@ -16,15 +16,17 @@ Search
 <%
 int n = 1;
 
+int zero = 0;
 ResultSetBean rsBean = new ResultSetBean();
 
 String[] songNameArray = new String[rsBean.getSongNameListLength()];
 
 String[] linkArray = new String[rsBean.getLinkListLength()];
 
-songNameArray = rsBean.createSongNameListArray().clone();
+System.arraycopy(rsBean.createSongNameListArray(),zero, songNameArray, zero, rsBean.getSongNameListLength());
 
-linkArray = rsBean.createLinkListArray().clone();
+System.arraycopy(rsBean.createLinkListArray(),zero, linkArray, zero, rsBean.getLinkListLength());
+
 %>
 <%= songNameArray.length %>
 <% 

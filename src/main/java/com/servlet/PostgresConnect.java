@@ -239,7 +239,7 @@ public class PostgresConnect extends HttpServlet {
          //request.setAttribute("linkList", linkList);
          response.sendRedirect("/Search.jsp");
          
-         
+        
         /*
          
 

@@ -13,11 +13,13 @@ public class ResultSetBean {
 	
 	
 	public int getSongNameListLength(){
-		return songNameList.size();
+		int size = songNameList.size();
+		return size;
 	}
 	
 	public int getLinkListLength(){
-		return linkList.size();
+		int size = linkList.size();
+		return size;
 	}
 	
 	

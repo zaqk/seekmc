@@ -2,6 +2,7 @@ package com.bean;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.List;
 
 public class ResultSetBean {
@@ -66,12 +67,12 @@ public class ResultSetBean {
 	
 	
 	public void createSongNameList(List<String> songNameList) {
-		songNameList = this.songNameList;
+		Collections.copy(this.songNameList, songNameList);
 
 	}
 
 	public void createLinkList(List<String> linkList) {
-		linkList = this.linkList;
+		Collections.copy(this.linkList, linkList);
 	}
 
 	public String getString(String column) {

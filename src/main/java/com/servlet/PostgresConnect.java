@@ -223,15 +223,9 @@ public class PostgresConnect extends HttpServlet {
          rsBean.createSongNameList(songNameList);
          rsBean.createLinkList(linkList);
          
-         while(rs.next()){
-        	 
-        	 songNameList.add("song_name");
-        	 linkList.add("link");
-        	 
-         }
         
-         request.setAttribute("songNameList", songNameList);
-         request.setAttribute("linkList", linkList);
+         //request.setAttribute("songNameList", songNameList);
+         //request.setAttribute("linkList", linkList);
          response.sendRedirect("/Search.jsp");
          
          

@@ -12,6 +12,17 @@ public class ResultSetBean {
 	private ResultSet privateResultSet;
 	
 	
+	public int getSongNameListLength(){
+		return songNameList.size();
+	}
+	
+	public int getLinkListLength(){
+		return linkList.size();
+	}
+	
+	
+	
+	
 	public void addToSongNameList(String songName){
 		
 		songNameList.add(songName);
@@ -48,8 +59,8 @@ public class ResultSetBean {
 
 		try {
 			while(rs.next()){
-				addToSongNameList(rs.getString("song_name"));
-				addToLinkList(rs.getString("link"));
+				songNameList.add((rs.getString("song_name")));
+				linkList.add((rs.getString("link")));
 				
 			}
 		} catch (SQLException e) {

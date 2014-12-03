@@ -11,15 +11,20 @@
 <body>
 Search
 <table>
-<c:forEach items= "${songNameList}" var="songNameList">
- <tr>
-  <td><c:out value="${songNameList}" /></td>
+<%
+int n = 1;
 
- </tr>
-</c:forEach>
+ResultSetBean rsBean = new ResultSetBean();
+
+String[] songNameArray = new String[rsBean.getSongNameListLength()];
+
+String[] linkArray = new String[rsBean.getLinkListLength()];
+
+for(int i = 0; i < songNameArray.length; i++){
+%>
 <tr>
 <td>
-<b>1. Song Name: </b>
+<b><%= n %>. Song Name: <%= songNameArray[i] %></b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>
@@ -27,10 +32,11 @@ Search
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="google.com">link here</a>
+<td><a href ="<%= linkArray[i]%>"><%= linkArray[i] %></a>
 <br/>
 </td>
 </tr>
+<% } %>
 </table>
 </body>
 </html>

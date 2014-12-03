@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
@@ -160,7 +161,7 @@ public class PostgresConnect extends HttpServlet {
          	
          }
          Statement stmt = con.createStatement();
-         String query = "SELECT * FROM main WHERE "//SELECT * FROM d3f68tgt8qdh4u.main
+         String query = "SELECT * FROM main WHERE "
          + "experimental = " 
          + qryExperimental +  " " + "AND" + " "
          + "house_influenced = " + " "
@@ -211,32 +212,30 @@ public class PostgresConnect extends HttpServlet {
          
          
          
-         //ResultSetBean rsBean = new ResultSetBean();
+         ResultSetBean rsBean = new ResultSetBean();
          
-         //rsBean.setResultSet(rs);
+         rsBean.compileData(rs);
          
-        // while(rs.next()){
-        	 
-        	//rsBean rs.getString("song_name");
-        	 
-         //}
          
-       /*  while(rs.next()){
+         
+         List<String> songNameList = new ArrayList<String>();
+         List<String> linkList = new ArrayList<String>();
+         rsBean.createSongNameList(songNameList);
+         rsBean.createLinkList(linkList);
+         
+         while(rs.next()){
         	 
-        	 //rsBean.addToSongNameList(rs.getString("song_name"));
+        	 songNameList.add("song_name");
+        	 linkList.add("link");
         	 
-        	// rsBean.addToLinkList(rs.getString("link"));
-        	 
-        	 ResultSetBean.songNameList.add(rs.getString("song_name"));
-        	 
-        	 ResultSetBean.linkList.add( rs.getString("link"));
          }
-         */
         
-         //response.sendRedirect("/Search.jsp");
+         request.setAttribute("songNameList", songNameList);
+         request.setAttribute("linkList", linkList);
+         response.sendRedirect("/Search.jsp");
          
          
-        
+        /*
          
 
          
@@ -276,7 +275,7 @@ public class PostgresConnect extends HttpServlet {
              out.print("<br/>");
              i++;
          }
-     		out.print("</body></html>");
+     		out.print("</body></html>");*/
      		
 	     } catch (ClassNotFoundException e1) {
 				e1.printStackTrace();

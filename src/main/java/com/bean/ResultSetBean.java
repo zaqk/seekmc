@@ -6,8 +6,8 @@ import java.util.List;
 
 public class ResultSetBean {
 
-	public List<String> songNameList;
-	public List<String> linkList;
+	private List<String> songNameList;
+	private List<String> linkList;
 	
 	private ResultSet privateResultSet;
 	
@@ -24,24 +24,13 @@ public class ResultSetBean {
 		
 	}
 	
-	public List<String> getSongNameList(){
-		return songNameList;
+	public void createSongNameList(List<String> songNameList){
+		this.songNameList = songNameList;
 
 	}
 	
-	public List<String> getLinkList(){
-		return linkList;
-	}
-	
-	public boolean next(){		
-	
-		try {
-			return privateResultSet.next();
-		} catch (SQLException e) {
-			e.printStackTrace();
-			return false;//come back here
-		}
-		
+	public void createLinkList(List<String> linkList){
+		this.linkList = linkList;
 	}
 	
 	public String getString(String column){
@@ -54,10 +43,17 @@ public class ResultSetBean {
 		}
 		
 	}
-	public void setResultSet(ResultSet rs){
-		
-		rs = privateResultSet;
-		
-	}
-	
+
+	public void compileData(ResultSet rs){
+
+		try {
+			while(rs.next()){
+				addToSongNameList(rs.getString("song_name"));
+				addToLinkList(rs.getString("link"));
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	} 
 }

@@ -233,9 +233,9 @@ public class PostgresConnect extends HttpServlet {
          }
          */
         
-         response.sendRedirect("/Search.jsp");
+         //response.sendRedirect("/Search.jsp");
          
-         /*
+         
         
          
 
@@ -276,7 +276,7 @@ public class PostgresConnect extends HttpServlet {
              out.print("<br/>");
              i++;
          }
-     		out.print("</body></html>");*/
+     		out.print("</body></html>");
      		
 	     } catch (ClassNotFoundException e1) {
 				e1.printStackTrace();

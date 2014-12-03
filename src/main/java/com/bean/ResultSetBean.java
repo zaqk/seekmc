@@ -6,8 +6,8 @@ import java.util.List;
 
 public class ResultSetBean {
 
-	public static List<String> songNameList;
-	public static List<String> linkList;
+	public List<String> songNameList;
+	public List<String> linkList;
 	
 	private ResultSet privateResultSet;
 	

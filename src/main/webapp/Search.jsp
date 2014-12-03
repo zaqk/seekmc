@@ -13,7 +13,7 @@ Search
 <table>
 <c:forEach items= "${songNameList}" var="songNameList">
  <tr>
-  <td><c:out value="${foo.name}" /></td>
+  <td><c:out value="${songNameList}" /></td>
 
  </tr>
 </c:forEach>

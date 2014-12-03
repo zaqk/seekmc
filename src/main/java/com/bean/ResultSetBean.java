@@ -10,73 +10,91 @@ public class ResultSetBean {
 	private List<String> linkList;
 	private int songNameListLength;
 	private int linkListLength;
-	
+
 	private ResultSet privateResultSet;
-	
-	
-	public void setSongNameListLength(int songNameListLength){
+
+	public void setSongNameListLength(int songNameListLength) {
 		this.songNameListLength = songNameListLength;
-		
+
 	}
-	
-	public void setLinkListLength(int linkListLength){
+
+	public void setLinkListLength(int linkListLength) {
 		this.linkListLength = linkListLength;
 	}
-	
-	public int getSongNameListLength(){
+
+	public int getSongNameListLength() {
 		return songNameListLength;
-		
+
 	}
-	
-	public int getLinkListLength(){
+
+	public int getLinkListLength() {
 		return linkListLength;
 	}
-	
-	
-	
-	
-	public void addToSongNameList(String songName){
-		
+
+	public void addToSongNameList(String songName) {
+
 		songNameList.add(songName);
-		
+
 	}
-	
-	public void addToLinkList(String linkName){
-		
+
+	public void addToLinkList(String linkName) {
+
 		linkList.add(linkName);
-		
+
 	}
-	
-	public void createSongNameList(List<String> songNameList){
+
+	public String[] createSongNameListArray() {
+
+		String[] songNameArray = new String[getSongNameListLength()];
+
+		for (int i = 0; i < songNameList.size(); i++) {
+			songNameArray[i] = songNameList.get(i);
+		}
+
+		return songNameArray;
+	}
+
+	public String[] createLinkListArray() {
+
+		String[] linkListArray = new String[getLinkListLength()];
+
+		for (int i = 0; i < linkList.size(); i++) {
+			linkListArray[i] = songNameList.get(i);
+		}
+
+		return linkListArray;
+	}
+
+	public void createSongNameList(List<String> songNameList) {
 		songNameList = this.songNameList;
 
 	}
-	
-	public void createLinkList(List<String> linkList){
+
+	public void createLinkList(List<String> linkList) {
 		linkList = this.linkList;
 	}
-	
-	public String getString(String column){
-		
+
+	public String getString(String column) {
+
 		try {
 			return privateResultSet.getString(column);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return "SQL Error";//Come back here
+			return "SQL Error";// Come back here
 		}
-		
+
 	}
 
-	public void compileData(ResultSet rs){
+	public void compileData(ResultSet rs) {
 
 		try {
-			while(rs.next()){
+			while (rs.next()) {
 				songNameList.add((rs.getString("song_name")));
 				linkList.add((rs.getString("link")));
-				
+
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	} 
+	}
 }

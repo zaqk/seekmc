@@ -21,6 +21,10 @@ ResultSetBean rsBean = new ResultSetBean();
 String[] songNameArray = new String[rsBean.getSongNameListLength()];
 
 String[] linkArray = new String[rsBean.getLinkListLength()];
+
+songNameArray = rsBean.createSongNameListArray();
+
+linkArray = rsBean.createLinkListArray();
 %>
 <%= songNameArray.length %>
 <% 

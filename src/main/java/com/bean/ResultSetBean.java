@@ -36,12 +36,12 @@ public class ResultSetBean {
 	}
 	
 	public void createSongNameList(List<String> songNameList){
-		this.songNameList = songNameList;
+		songNameList = this.songNameList;
 
 	}
 	
 	public void createLinkList(List<String> linkList){
-		this.linkList = linkList;
+		linkList = this.linkList;
 	}
 	
 	public String getString(String column){

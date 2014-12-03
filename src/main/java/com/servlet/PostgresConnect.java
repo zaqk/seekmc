@@ -214,12 +214,17 @@ public class PostgresConnect extends HttpServlet {
          
          ResultSetBean rsBean = new ResultSetBean();
          
-         rsBean.compileData(rs);
-         
-         
+         //rsBean.compileData(rs);
          
          List<String> songNameList = new ArrayList<String>();
          List<String> linkList = new ArrayList<String>();
+         
+         while(rs.next()){
+				songNameList.add((rs.getString("song_name")));
+				linkList.add((rs.getString("link")));
+         }
+         
+         
          rsBean.createSongNameList(songNameList);
          rsBean.createLinkList(linkList);
          

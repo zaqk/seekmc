@@ -10,6 +10,9 @@
 <body>
 Search
 <table>
+<%for(int i = 0; i < 5; i++){ %>
+<b> yo </b>
+<%} %>
 <%
 int n = 1;
 

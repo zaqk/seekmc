@@ -67,12 +67,15 @@ public class ResultSetBean {
 	
 	
 	public void createSongNameList(List<String> songNameList) {
-		Collections.copy(this.songNameList, songNameList);
-
+		for(int i = 0; i < songNameList.size(); i++){
+			this.songNameList.set(i, songNameList.get(i));
+		}
 	}
 
 	public void createLinkList(List<String> linkList) {
-		Collections.copy(this.linkList, linkList);
+		for(int i = 0; i < linkList.size(); i++){
+			this.linkList.set(i, linkList.get(i));
+		}
 	}
 
 	public String getString(String column) {

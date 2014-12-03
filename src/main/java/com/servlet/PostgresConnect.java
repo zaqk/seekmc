@@ -219,10 +219,10 @@ public class PostgresConnect extends HttpServlet {
          List<String> songNameList = new ArrayList<String>();
          List<String> linkList = new ArrayList<String>();
          
-         while(rs.next()){
-				songNameList.add((rs.getString("song_name")));
-				linkList.add((rs.getString("link")));
-         }
+         //while(rs.next()){
+				//songNameList.add((rs.getString("song_name")));
+				//linkList.add((rs.getString("link")));
+         //}
          int songNameListLength = songNameList.size();
          int linkListLength = linkList.size();
          

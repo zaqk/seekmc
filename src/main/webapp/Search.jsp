@@ -22,9 +22,9 @@ String[] songNameArray = new String[rsBean.getSongNameListLength()];
 
 String[] linkArray = new String[rsBean.getLinkListLength()];
 
-songNameArray = rsBean.createSongNameListArray();
+songNameArray = rsBean.createSongNameListArray().clone();
 
-linkArray = rsBean.createLinkListArray();
+linkArray = rsBean.createLinkListArray().clone();
 %>
 <%= songNameArray.length %>
 <% 

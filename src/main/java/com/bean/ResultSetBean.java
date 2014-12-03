@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import java.util.Collections;
 import java.util.List;
 
+import com.rits.cloning.Cloner;
+
 public class ResultSetBean {
 
 	private List<String> songNameList;
@@ -13,6 +15,8 @@ public class ResultSetBean {
 	private int linkListLength;
 
 	private ResultSet privateResultSet;
+	
+	Cloner cloner = new Cloner();
 
 	public void setSongNameListLength(int songNameListLength) {
 		this.songNameListLength = songNameListLength;
@@ -62,20 +66,18 @@ public class ResultSetBean {
 		//linkList.toArray(linkArray);
 		
 		return linkArray;
+		
 	}
 
 	
 	
 	public void createSongNameList(List<String> songNameList) {
-		for(int i = 0; i < songNameList.size(); i++){
-			this.songNameList.set(i, songNameList.get(i));
-		}
+		this.songNameList = cloner.deepClone(songNameList);
+
 	}
 
 	public void createLinkList(List<String> linkList) {
-		for(int i = 0; i < linkList.size(); i++){
-			this.linkList.set(i, linkList.get(i));
-		}
+		this.linkList = cloner.deepClone(linkList);
 	}
 
 	public String getString(String column) {

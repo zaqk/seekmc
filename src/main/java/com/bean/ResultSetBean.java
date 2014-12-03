@@ -46,25 +46,23 @@ public class ResultSetBean {
 	public String[] createSongNameListArray() {
 
 		String[] songNameArray = new String[getSongNameListLength()];
-
-		for (int i = 0; i < songNameList.size(); i++) {
-			songNameArray[i] = songNameList.get(i);
-		}
-
+		
+		songNameList.toArray(songNameArray);
+		
 		return songNameArray;
 	}
 
 	public String[] createLinkListArray() {
 
-		String[] linkListArray = new String[getLinkListLength()];
+		String[] linkArray = new String[getLinkListLength()];
 
-		for (int i = 0; i < linkList.size(); i++) {
-			linkListArray[i] = songNameList.get(i);
-		}
-
-		return linkListArray;
+		linkList.toArray(linkArray);
+		
+		return linkArray;
 	}
 
+	
+	
 	public void createSongNameList(List<String> songNameList) {
 		songNameList = this.songNameList;
 

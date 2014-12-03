@@ -8,18 +8,28 @@ public class ResultSetBean {
 
 	private List<String> songNameList;
 	private List<String> linkList;
+	private int songNameListLength;
+	private int linkListLength;
 	
 	private ResultSet privateResultSet;
 	
 	
+	public void setSongNameListLength(int songNameListLength){
+		this.songNameListLength = songNameListLength;
+		
+	}
+	
+	public void setLinkListLength(int linkListLength){
+		this.linkListLength = linkListLength;
+	}
+	
 	public int getSongNameListLength(){
-		int size = songNameList.size();
-		return size;
+		return songNameListLength;
+		
 	}
 	
 	public int getLinkListLength(){
-		int size = linkList.size();
-		return size;
+		return linkListLength;
 	}
 	
 	

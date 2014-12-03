@@ -45,9 +45,11 @@ public class ResultSetBean {
 
 	public String[] createSongNameListArray() {
 
-		String[] songNameArray = new String[getSongNameListLength()];
+		//String[] songNameArray = new String[getSongNameListLength()];
 		
-		songNameList.toArray(songNameArray);
+		String[] songNameArray = (String[]) songNameList.toArray(new String[0]);
+		
+		//songNameList.toArray(songNameArray);
 		
 		return songNameArray;
 	}
@@ -56,7 +58,7 @@ public class ResultSetBean {
 
 		String[] linkArray = new String[getLinkListLength()];
 
-		linkList.toArray(linkArray);
+		//linkList.toArray(linkArray);
 		
 		return linkArray;
 	}

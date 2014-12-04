@@ -239,9 +239,12 @@ public class PostgresConnect extends HttpServlet {
          int songNameListLength = initialSongNameList.size();//right
          rsBean.setSongNameListLength(songNameListLength);//right(getter works too)
          rsBean.cloneLists(initialSongNameList, initialLinkNameList);//right
+         
+         String[] songNameArray = new String[rsBean.getSongNameListLength()];
+         
          out = response.getWriter();
          out.print("<html>");
-         out.print(rsBean.debugList());
+         out.print(rsBean.copySongNameListArray(songNameArray));
          out.print("</html>");
          
          

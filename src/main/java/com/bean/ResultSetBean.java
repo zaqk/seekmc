@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ResultSetBean {
 
-	private List<String> songNameList = new ArrayList<String>();
+	public  List<String> songNameList = new ArrayList<String>();
 	private List<String> linkList = new ArrayList<String>();
 	
 	
@@ -52,18 +52,6 @@ public class ResultSetBean {
 		return linkListLength;
 	}
 
-	public void addToSongNameList(String songName) {
-
-		songNameList.add(songName);
-
-	}
-
-	public void addToLinkList(String linkName) {
-
-		linkList.add(linkName);
-
-	}
-
 	public String[] createSongNameListArray() {
 
 		//String[] songNameArray = new String[getSongNameListLength()];
@@ -96,16 +84,7 @@ public class ResultSetBean {
 		this.linkList = new ArrayList<String>(linkList);
 	}
 
-	public String getString(String column) {
 
-		try {
-			return privateResultSet.getString(column);
-		} catch (SQLException e) {
-			e.printStackTrace();
-			return "SQL Error";// Come back here
-		}
-
-	}
 	
 //--------------------------------NEW STUFF----------------------------------------------
 

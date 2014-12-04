@@ -10,34 +10,18 @@
 <body>
 Search
 <table>
-<%for(int i = 0; i < 5; i++){ %>
-<b> yo </b>
-<%} %>
-<%
-int n = 1;
-
-int zero = 0;
-ResultSetBean rsBean = new ResultSetBean();
-
-String[] songNameArray = new String[rsBean.getSongNameListLength()];
-%>
-<%= rsBean.getSongNameListLength()%>
-<% 
-//String[] linkArray = new String[rsBean.getLinkListLength()];
-
-
-
-//System.arraycopy(rsBean.copySongNameListArray(songNameArray),zero, songNameArray, zero, rsBean.getSongNameListLength());
-
-//System.arraycopy(rsBean.createLinkListArray(),zero, linkArray, zero, rsBean.getLinkListLength());
-
-%>>
-<% 
-for(int i = 0; i != songNameArray.length; i++){
+<%  
+      String[] songNameArray = (String[])request.getAttribute("songNameArray");
+	  String[] linkArray = (String[])request.getAttribute("linkArray");
+	  
+	  int n = 1;
+	  
+	  for(int i = 0; i < songNameArray.length; i++){
+		  
 %>
 <tr>
 <td>
-<b><%= n %>. Song Name: <%= songNameArray[i] %></b>
+<b><%= n %>. Song Name:<%=songNameArray[i] %></b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>
@@ -45,7 +29,7 @@ for(int i = 0; i != songNameArray.length; i++){
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="google.com">google</a>
+<td><a href ="<%= linkArray[i]%>"><%= linkArray[i]%></a>
 <br/>
 </td>
 </tr>

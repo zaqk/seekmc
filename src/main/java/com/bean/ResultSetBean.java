@@ -2,21 +2,31 @@ package com.bean;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
-import com.rits.cloning.Cloner;
+
 
 public class ResultSetBean {
 
 	private List<String> songNameList;
 	private List<String> linkList;
+	
+	
+	
 	private int songNameListLength;
 	private int linkListLength;
+	private int songNameArrayLength;
+	private int linkArrayLength;
 
+	
+	
+	
 	private ResultSet privateResultSet;
 	
-	Cloner cloner = new Cloner();
+	
+	
+
 
 	public void setSongNameListLength(int songNameListLength) {
 		this.songNameListLength = songNameListLength;
@@ -72,12 +82,12 @@ public class ResultSetBean {
 	
 	
 	public void createSongNameList(List<String> songNameList) {
-		this.songNameList = cloner.deepClone(songNameList);
+		this.songNameList = new ArrayList<String>(songNameList);
 
 	}
 
 	public void createLinkList(List<String> linkList) {
-		this.linkList = cloner.deepClone(linkList);
+		this.linkList = new ArrayList<String>(linkList);
 	}
 
 	public String getString(String column) {
@@ -103,4 +113,20 @@ public class ResultSetBean {
 			e.printStackTrace();
 		}
 	}
+	
+	public String[] cloneSongNameArray(String [] initialSongNameArray){
+		String[] songNameArray = (String[]) initialSongNameArray.clone();
+		return songNameArray;
+	}
+	
+	public void cloneLinkArray(String [] initialLinkArray){
+		String[] linkArray = (String[]) initialLinkArray.clone();
+	}
+	
+//--------------------------------NEW STUFF----------------------------------------------
+	
+	public void cloneSongNameList(List<String> initialSongNameList){
+		songNameList = 
+	}
+
 }

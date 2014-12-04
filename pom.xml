@@ -20,12 +20,6 @@
   		<version>9.3-1102-jdbc4</version>
 	</dependency>
 	
-	<!-- Cloner -->
-	<dependency>
-    	<groupId>uk.com.robust-it</groupId>
-    	<artifactId>cloning</artifactId>
-    	<version>1.8.5</version>
-	</dependency>
 	
         <!-- Servlet API -->
         <dependency>

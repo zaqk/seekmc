@@ -3,6 +3,7 @@ package com.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
+import java.sql.Array;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -212,25 +213,36 @@ public class PostgresConnect extends HttpServlet {
          
          
          
-         ResultSetBean rsBean = new ResultSetBean();
+         ResultSetBean rsBean = new ResultSetBean();//create bean
          
-         //rsBean.compileData(rs);
+         String songName;
+         String linkName;
          
-         List<String> songNameList = new ArrayList<String>();
-         List<String> linkList = new ArrayList<String>();
+         while(rs.next()){
+        	 songName = rs.getString("song_name");
+        	 rsBean.addToSongNameList("song_name");
+        	 
+        	 linkName = rs.getString("link");
+        	 rsBean.addToLinkList("link"); 
+         }
          
-         //while(rs.next()){
-				//songNameList.add((rs.getString("song_name")));
-				//linkList.add((rs.getString("link")));
-         //}
-         int songNameListLength = songNameList.size();
-         int linkListLength = linkList.size();
          
-         rsBean.setSongNameListLength(songNameListLength);
-         rsBean.setLinkListLength(linkListLength);
          
-         rsBean.createSongNameList(songNameList);
-         rsBean.createLinkList(linkList);
+         
+         
+         
+         
+         
+         /*Array sna = rs.getArray("song_name");//create sql array
+         String[] initialSongNameArray = (String[])sna.getArray();//convert sql array to array
+         int songNameArrayLength = initialSongNameArray.length;//grabs length will use later
+         
+         Array la = rs.getArray("link");//same as above but for song links
+         String[] initialLinkArray = (String[])la.getArray();
+         int linkArrayLength = initialLinkArray.length;
+         
+         List<String> initialSongNameList = Arrays.asList(initialSongNameArray);//converts arrays to lists
+         List<String> initialLinkList = Arrays.asList(initialLinkArray);		//for use in rsBean.*/
          
          
          

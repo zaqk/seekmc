@@ -13,6 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -242,8 +243,10 @@ public class PostgresConnect extends HttpServlet {
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);
          
-         
-         response.sendRedirect("/Search.jsp");
+         RequestDispatcher dispatcher =
+        		 getServletContext().getRequestDispatcher("/Search.jsp");
+        		 dispatcher.forward(request, response);
+      
          
          
          

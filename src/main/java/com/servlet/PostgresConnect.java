@@ -19,6 +19,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.bean.ResultSetBean;
 import com.converter.DecoderRing;
@@ -76,10 +77,7 @@ public class PostgresConnect extends HttpServlet {
          
          
           if(attributePreferences.length != 0){
-         	
-         	//response.sendRedirect("/MajesticX2/Search.jsp");
-         	//this line makes submit button submit to Search page
-         	
+
          	List<String> attributePreferencesList = Arrays.asList(attributePreferences);
          
          
@@ -211,17 +209,7 @@ public class PostgresConnect extends HttpServlet {
          
          ResultSet rs = stmt.executeQuery(query);
          
-         
-         
          ResultSetBean rsBean = new ResultSetBean();
-         
-         
-         
-         request.setAttribute("rsBean", rsBean);
-         
-         getServletConfig().getServletContext();
-         
-         request.getRequestDispatcher("/Search.jsp").forward(request,response);
          
          List<String> initialSongNameList = new ArrayList<String>();
          
@@ -231,15 +219,6 @@ public class PostgresConnect extends HttpServlet {
          
          rsBean.setSongNameListLength(songListLength);
          
-        /* while (rs.next()) {
-        	  int i = rs.getInt("userid");
-        	  String str = rs.getString("username");
-
-        	  //Assuming you have a user object
-        	  User user = new User(i, str);
-
-        	  ll.add(user);
-        	}*/
          while(rs.next()){
         	 String songName = rs.getString("song_name");
         	 String linkName = rs.getString("link");
@@ -255,13 +234,14 @@ public class PostgresConnect extends HttpServlet {
          String [] songNameArray = initialSongNameList.toArray(new String[initialSongNameList.size()]);
          
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
+
          
+//------------------------------------------SESSION--------------------------------------------------
+
          
-         request.setAttribute("rsBean", rsBean);
+         request.setAttribute("songNameArray", songNameArray);
+         request.setAttribute("linkArray", linkArray);
          
-         getServletConfig().getServletContext();
-         
-         request.getRequestDispatcher("/Search.jsp").forward(request,response);
          
          response.sendRedirect("/Search.jsp");
          
@@ -356,9 +336,5 @@ public class PostgresConnect extends HttpServlet {
 			}
 	}
 
-	private Object getRequestDispatcher(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

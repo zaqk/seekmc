@@ -14,7 +14,7 @@ Search
 
 <tr>
 <td>
-<b>1.SongName: ${rsBean.songNameListLength} </b>
+<b>1.SongName: <%= String[] songNameArray (String []) request.getAttribute("songNameArray");%></b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>

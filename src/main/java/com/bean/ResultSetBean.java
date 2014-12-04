@@ -19,21 +19,6 @@ public class ResultSetBean {
 	private int songNameArrayLength;
 	private int linkArrayLength;
 
-	
-	
-	
-	private ResultSet privateResultSet;
-	
-	
-	public String[] getSongNameListArray(){
-
-		String[] songNameListArray = songNameList.toArray(new String[songNameListLength]);
-		
-		return songNameListArray;
-	}
-	
-
-
 	public void setSongNameListLength(int songNameListLength) {
 		this.songNameListLength = songNameListLength;
 
@@ -52,16 +37,13 @@ public class ResultSetBean {
 		return linkListLength;
 	}
 
-	public String copySongNameListArray(String[] songNameArray) {
+	public String[] copySongNameListArray(String[] songNameArray) {
 
-		//String[] songNameArray = new String[getSongNameListLength()];
 		
 		songNameArray = (String[]) songNameList.toArray(new String[0]);
 		
-		//songNameList.toArray(songNameArray);
+		return songNameArray;
 		
-		
-		return songNameArray[7];
 	}
 
 	public String[] createLinkListArray() {

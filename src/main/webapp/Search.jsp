@@ -15,7 +15,7 @@ Search
   
 <tr>
 <td>
-<b>${i}. SongName: ${songNameArray[i]} </b>
+<b>${i + 1}. SongName: ${songNameArray[i]} </b>
 </td>
 </tr>
 <tr>

@@ -26,7 +26,7 @@ Search
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="${linkArray[i]}">${linkArray[lSession.i]}</a>
+<td><a href ="${linkArray[i]}">${linkArray[i]}</a>
 <br/>
 </td>
 </tr>

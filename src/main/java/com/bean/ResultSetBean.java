@@ -71,13 +71,14 @@ public class ResultSetBean {
 	
 //--------------------------------NEW STUFF----------------------------------------------
 
-	public void cloneLists(List<String> initialSongNameList, List<String> initialLinkNameList){
+	public void cloneLists(List<String> initialSongNameList){
 		for(int i = 0; i < initialSongNameList.size(); i++){
 			songNameList.add(initialSongNameList.get(i));
 		}
-		for(int i = 0; i < initialLinkNameList.size(); i++){
-			linkList.add(initialLinkNameList.get(i));
-		}
+		
+		//for(int i = 0; i < initialLinkNameList.size(); i++){
+		//	linkList.add(initialLinkNameList.get(i));
+		//}
 	}
 
 

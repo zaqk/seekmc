@@ -213,7 +213,15 @@ public class PostgresConnect extends HttpServlet {
          
          
          
-         ResultSetBean rsBean = new ResultSetBean();//create bean
+         ResultSetBean rsBean = new ResultSetBean();
+         
+         
+         
+         request.setAttribute("rsBean", rsBean);
+         
+         getServletConfig().getServletContext();
+         
+         request.getRequestDispatcher("/Search.jsp").forward(request,response);
          
          List<String> initialSongNameList = new ArrayList<String>();
          
@@ -237,14 +245,19 @@ public class PostgresConnect extends HttpServlet {
         	 
          }
          
+         rsBean.cloneLists(initialSongNameList);
+         
          
          String [] songNameArray = initialSongNameList.toArray(new String[initialSongNameList.size()]);
          
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
          
-         request.setAttribute("songNameArray",songNameArray);
          
-         request.setAttribute("linkArray", linkArray);
+         request.setAttribute("rsBean", rsBean);
+         
+         getServletConfig().getServletContext();
+         
+         request.getRequestDispatcher("/Search.jsp").forward(request,response);
          
          response.sendRedirect("/Search.jsp");
          
@@ -337,6 +350,11 @@ public class PostgresConnect extends HttpServlet {
 				e.printStackTrace();
 				out.print(" SQLException");
 			}
+	}
+
+	private Object getRequestDispatcher(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

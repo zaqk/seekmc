@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
@@ -242,9 +243,8 @@ public class PostgresConnect extends HttpServlet {
          HttpSession session = request.getSession();
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);
-         
-         RequestDispatcher dispatcher =
-        		 getServletContext().getRequestDispatcher("/Search.jsp");
+         getServletConfig().getServletContext();
+         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
         		 dispatcher.forward(request, response);
       
          

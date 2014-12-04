@@ -12,13 +12,10 @@
 <body>
 Search
 <table>
-<% String songNameArray[] = (String []) request.getAttribute("songNameArray");
-   String linkArray[] = (String[]) request.getAttribute("linkArray");
-   for(int i = 0; i < songNameArray.length; i++){
-%>
+
 <tr>
 <td>
-<b>1.SongName: <%= songNameArray[i] %> </b>
+<b>1.SongName: ${songNameArray[0]} </b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>
@@ -26,7 +23,7 @@ Search
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="<%= linkArray[i] %>"><%= linkArray[i] %></a>
+<td><a href ="${linkArray[0]}">${linkArray[0]}</a>
 <br/>
 </td>
 </tr>

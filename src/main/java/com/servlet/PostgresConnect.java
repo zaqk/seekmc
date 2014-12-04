@@ -216,6 +216,7 @@ public class PostgresConnect extends HttpServlet {
          ResultSetBean rsBean = new ResultSetBean();//create bean
          
          List<String> initialSongNameList = new ArrayList<String>();
+         
          List <String> initialLinkNameList = new ArrayList<String>();
          
         /* while (rs.next()) {
@@ -235,6 +236,8 @@ public class PostgresConnect extends HttpServlet {
         	 initialLinkNameList.add(linkName);
         	 
          }
+         int songNameListLength = initialSongNameList.size();
+         rsBean.setSongNameListLength(songNameListLength);
          
          rsBean.cloneLists(initialSongNameList, initialLinkNameList);
          

@@ -34,8 +34,8 @@ public class ResultSetBean {
 	
 
 
-	public void setSongNameListLength() {
-		songNameListLength = songNameList.size();
+	public void setSongNameListLength(int songNameListLength) {
+		this.songNameListLength = songNameListLength;
 
 	}
 

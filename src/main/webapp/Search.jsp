@@ -10,12 +10,12 @@
 <body>
 Search
 <table>
-    <c:forEach var="i" begin="0" end="${length}">  
+    <c:forEach var="i" begin="1" end="${length}">  
  
   
 <tr>
 <td>
-<b>1. SongName: ${songNameArray[i]} </b>
+<b>${i}. SongName: ${songNameArray[i]} </b>
 </td>
 </tr>
 <tr>

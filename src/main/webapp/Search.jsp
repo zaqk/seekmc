@@ -5,22 +5,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Search</title>
+<title>MajesticX</title>
 </head>
 <body>
-Search
+<b>Search</b>
 <table>
     <c:forEach var="i" begin="0" end="${length - 1}">  
  
   
 <tr>
 <td>
-<b>${i + 1}. SongName: ${songNameArray[i]} </b>
+<b>${i + 1}. SongName: </b> ${songNameArray[i]} 
 </td>
 </tr>
 <tr>
 <td>
-<b>Link: <a href ="${linkArray[i]}">${linkArray[i]}</a></b></td>
+<b>Link: </b><a href ="${linkArray[i]}">${linkArray[i]}</a></td>
 </tr>
     </c:forEach>
 </table>

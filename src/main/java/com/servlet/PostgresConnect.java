@@ -238,14 +238,12 @@ public class PostgresConnect extends HttpServlet {
          }
          int songNameListLength = initialSongNameList.size();//right
          rsBean.setSongNameListLength(songNameListLength);//right(getter works too)
-         rsBean.cloneLists(initialSongNameList, initialLinkNameList);
+         rsBean.cloneLists(initialSongNameList, initialLinkNameList);//right
          out = response.getWriter();
          out.print("<html>");
          out.print(rsBean.debugList());
          out.print("</html>");
-         rsBean.setSongNameListLength(songNameListLength);
          
-         rsBean.cloneLists(initialSongNameList, initialLinkNameList);
          
          
         /* while(rs.next()){

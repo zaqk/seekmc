@@ -215,16 +215,37 @@ public class PostgresConnect extends HttpServlet {
          
          ResultSetBean rsBean = new ResultSetBean();//create bean
          
-         String songName;
-         String linkName;
+         List<String> initialSongNameList = new ArrayList<String>();
+         List <String> initialLinkNameList = new ArrayList<String>();
          
+        /* while (rs.next()) {
+        	  int i = rs.getInt("userid");
+        	  String str = rs.getString("username");
+
+        	  //Assuming you have a user object
+        	  User user = new User(i, str);
+
+        	  ll.add(user);
+        	}*/
          while(rs.next()){
+        	 String songName = rs.getString("song_name");
+        	 String linkName = rs.getString("link");
+        	 
+        	 initialSongNameList.add(songName);
+        	 initialLinkNameList.add(linkName);
+        	 
+         }
+         
+         rsBean.cloneLists(initialSongNameList, initialLinkNameList);
+         
+         
+        /* while(rs.next()){
         	 songName = rs.getString("song_name");
         	 rsBean.addToSongNameList(songName);
         	 
         	 linkName = rs.getString("link");
         	 rsBean.addToLinkList(linkName); 
-         }
+         }*/
          
          
          

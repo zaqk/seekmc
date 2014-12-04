@@ -9,8 +9,8 @@ import java.util.List;
 
 public class ResultSetBean {
 
-	private List<String> songNameList;
-	private List<String> linkList;
+	private List<String> songNameList = new ArrayList<String>();
+	private List<String> linkList = new ArrayList<String>();
 	
 	
 	
@@ -25,11 +25,17 @@ public class ResultSetBean {
 	private ResultSet privateResultSet;
 	
 	
+	public String[] getSongNameListArray(){
+
+		String[] songNameListArray = songNameList.toArray(new String[songNameListLength]);
+		
+		return songNameListArray;
+	}
 	
 
 
-	public void setSongNameListLength(int songNameListLength) {
-		this.songNameListLength = songNameListLength;
+	public void setSongNameListLength() {
+		songNameListLength = songNameList.size();
 
 	}
 
@@ -100,31 +106,16 @@ public class ResultSetBean {
 		}
 
 	}
-
-	public void compileData(ResultSet rs) {
-
-		try {
-			while (rs.next()) {
-				songNameList.add((rs.getString("song_name")));
-				linkList.add((rs.getString("link")));
-
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public String[] cloneSongNameArray(String [] initialSongNameArray){
-		String[] songNameArray = (String[]) initialSongNameArray.clone();
-		return songNameArray;
-	}
-	
-	public void cloneLinkArray(String [] initialLinkArray){
-		String[] linkArray = (String[]) initialLinkArray.clone();
-	}
 	
 //--------------------------------NEW STUFF----------------------------------------------
-	
 
+	public void cloneLists(List<String> initialSongNameList, List<String> initialLinkNameList){
+		for(int i = 0; i < initialSongNameList.size(); i++){
+			songNameList.add(initialSongNameList.get(i));
+		}
+		for(int i = 0; i < initialLinkNameList.size(); i++){
+			linkList.add(initialLinkNameList.get(i));
+		}
+	}
 
 }

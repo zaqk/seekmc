@@ -20,10 +20,7 @@ Search
 </tr>
 <tr>
 <td>
-<b>Link: </b></td>
-<td><a href ="${linkArray[i]}">${linkArray[i]}</a>
-<br/>
-</td>
+<b>Link: <a href ="${linkArray[i]}">${linkArray[i]}</a></b></td>
 </tr>
     </c:forEach>
 </table>

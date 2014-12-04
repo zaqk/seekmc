@@ -31,9 +31,7 @@ String[] songNameArray = new String[rsBean.getSongNameListLength()];
 
 //System.arraycopy(rsBean.createLinkListArray(),zero, linkArray, zero, rsBean.getLinkListLength());
 
-%>
-<%= songNameArray[7] %>
-<%= songNameArray.length %>
+%>>
 <% 
 for(int i = 0; i != songNameArray.length; i++){
 %>

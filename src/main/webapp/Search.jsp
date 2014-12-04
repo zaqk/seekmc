@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="com.bean.ResultSetBean" %>  
+<%@ page import="com.bean.ResultSetBean" %> 
+<%@ page import="java.util.Arrays" %>
+<%@ page import="javax.servlet.http.HttpServletRequest" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,7 +16,7 @@ Search
 
 <tr>
 <td>
-<b>1.SongName: <%= String[] songNameArray (String []) request.getAttribute("songNameArray");%></b>
+<b>1.SongName: <%= String[] songNameArray = (String []) request.getAttribute("songNameArray");%></b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>

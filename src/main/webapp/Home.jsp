@@ -14,7 +14,7 @@
 
 
 
-<form action="/p" method="post">
+<form action="/search" method="post">
 
 Experimental:<input type="checkbox" name="attributePreference" value="experimental"/>
 

@@ -5,14 +5,9 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     version="2.5">
 
-     <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+    <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  	</welcome-file-list>
     
   <servlet>
     <servlet-name>hello</servlet-name>
@@ -22,12 +17,17 @@
    <servlet>
     <servlet-name>connection</servlet-name>
     <servlet-class>com.servlet.Connection</servlet-class>
-  </servlet>
+  	</servlet>
   
     <servlet>
-    <servlet-name>p</servlet-name>
+    <servlet-name>PostgresConnect</servlet-name>
     <servlet-class>com.servlet.PostgresConnect</servlet-class>
-  </servlet>
+  	</servlet>
+  	
+  	<servlet>
+  	<servlet-name>Search</servlet-name>
+  	<jsp-file>Search.jsp</jsp-file>
+  	</servlet>
 
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
@@ -40,9 +40,13 @@
   </servlet-mapping>
   
     <servlet-mapping>
-    <servlet-name>p</servlet-name>
+    <servlet-name>PostgresConnect</servlet-name>
     <url-pattern>/p</url-pattern>
-  </servlet-mapping>
+ 	 </servlet-mapping>
+ 	 
+ 	 <servlet-mapping>
+ 	 <servlet-name>Search</servlet-name>
+ 	 <url-pattern>/search</servlet-name>
 
       <resource-ref>
     <description>DB Connection</description>

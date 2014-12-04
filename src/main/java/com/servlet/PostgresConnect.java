@@ -249,9 +249,9 @@ public class PostgresConnect extends HttpServlet {
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);
          getServletConfig().getServletContext();
-         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
-        		 dispatcher.forward(request, response);
-         
+         //RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
+        	//	 dispatcher.forward(request, response);
+         response.sendRedirect(request.getContextPath() + "/search");
          
          
         /* while(rs.next()){

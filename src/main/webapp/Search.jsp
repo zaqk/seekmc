@@ -21,7 +21,7 @@ Search
 %>
 <tr>
 <td>
-<b><%= n %>. Song Name:<%=songNameArray[i] %></b>
+<b><%= n %>. Song Name:<%=songNameArray[i].toString() %></b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>
@@ -29,7 +29,7 @@ Search
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="<%= linkArray[i]%>"><%= linkArray[i]%></a>
+<td><a href ="<%= linkArray[i].toString()%>"><%= linkArray[i].toString()%></a>
 <br/>
 </td>
 </tr>

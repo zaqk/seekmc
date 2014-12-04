@@ -237,9 +237,10 @@ public class PostgresConnect extends HttpServlet {
         	 
          }
          
-         String[] songNameArray = (String[]) initialSongNameList.toArray();
          
-         String[] linkArray = (String[]) initialLinkNameList.toArray();
+         String [] songNameArray = initialSongNameList.toArray(new String[initialSongNameList.size()]);
+         
+         String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
          
          request.setAttribute("songNameArray",songNameArray);
          

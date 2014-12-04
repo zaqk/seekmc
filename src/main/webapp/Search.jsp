@@ -20,12 +20,14 @@ int zero = 0;
 ResultSetBean rsBean = new ResultSetBean();
 
 String[] songNameArray = new String[rsBean.getSongNameListLength()];
-
+%>
+<%= rsBean.getSongNameListLength()%>
+<% 
 //String[] linkArray = new String[rsBean.getLinkListLength()];
 
 
 
-System.arraycopy(rsBean.copySongNameListArray(songNameArray),zero, songNameArray, zero, rsBean.getSongNameListLength());
+//System.arraycopy(rsBean.copySongNameListArray(songNameArray),zero, songNameArray, zero, rsBean.getSongNameListLength());
 
 //System.arraycopy(rsBean.createLinkListArray(),zero, linkArray, zero, rsBean.getLinkListLength());
 

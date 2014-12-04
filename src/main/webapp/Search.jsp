@@ -10,7 +10,7 @@
 <body>
 Search
 <table>
-    <c:forEach var="i" begin="1" end="${length}">  
+    <c:forEach var="i" begin="0" end="${length - 1}">  
  
   
 <tr>

@@ -10,8 +10,9 @@ import java.util.List;
 public class ResultSetBean {
 
 	public  List<String> songNameList = new ArrayList<String>();
-	private List<String> linkList = new ArrayList<String>();
-	
+	public List<String> linkList = new ArrayList<String>();
+	public int length;
+	public int loop;
 	
 	
 	private int songNameListLength;
@@ -23,6 +24,13 @@ public class ResultSetBean {
 		this.songNameListLength = songNameListLength;
 
 	}
+	public void setLength(int length){
+		this.length = length;
+	}
+	public void setLoop(int i){
+		loop = i;
+	}
+	
 
 	public void setLinkListLength(int linkListLength) {
 		this.linkListLength = linkListLength;

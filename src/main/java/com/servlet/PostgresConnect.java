@@ -236,17 +236,21 @@ public class PostgresConnect extends HttpServlet {
          String [] songNameArray = initialSongNameList.toArray(new String[initialSongNameList.size()]);
          
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
+         
+         int arrayLength = songNameArray.length;
+         
+         rsBean.setSongNameListLength(songNameArray.length);
 
          
 //------------------------------------------SESSION--------------------------------------------------
 
          HttpSession session = request.getSession();
+         session.setAttribute("length", arrayLength);
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);
          getServletConfig().getServletContext();
          RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
         		 dispatcher.forward(request, response);
-      
          
          
          

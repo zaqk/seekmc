@@ -3,6 +3,7 @@
 <%@ page import="com.bean.ResultSetBean" %> 
 <%@ page import="java.util.Arrays" %>
 <%@ page import="javax.servlet.http.HttpServletRequest" %>
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,10 +13,12 @@
 <body>
 Search
 <table>
-
+    <c:forEach var="i" begin="0" end="${length}">  
+ 
+  
 <tr>
 <td>
-<b>1.SongName: ${songNameArray[0]} </b>
+<b>1.SongName: ${songNameArray[i]} </b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>
@@ -23,10 +26,11 @@ Search
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="${linkArray[0]}">${linkArray[0]}</a>
+<td><a href ="${linkArray[i]}">${linkArray[lSession.i]}</a>
 <br/>
 </td>
 </tr>
+    </c:forEach>
 </table>
 </body>
 </html>

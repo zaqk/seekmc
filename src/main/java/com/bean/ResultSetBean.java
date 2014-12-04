@@ -125,8 +125,6 @@ public class ResultSetBean {
 	
 //--------------------------------NEW STUFF----------------------------------------------
 	
-	public void cloneSongNameList(List<String> initialSongNameList){
-		songNameList = 
-	}
+
 
 }

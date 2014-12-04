@@ -14,7 +14,7 @@ Search
 
 <tr>
 <td>
-<b>1.SongName: ${rsBean} </b>
+<b>1.SongName: ${rsBean.songNameListLength} </b>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 </td>

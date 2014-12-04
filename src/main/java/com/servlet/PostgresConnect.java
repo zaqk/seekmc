@@ -227,6 +227,10 @@ public class PostgresConnect extends HttpServlet {
          
          List <String> initialLinkNameList = new ArrayList<String>();
          
+         int songListLength = initialSongNameList.size();
+         
+         rsBean.setSongNameListLength(songListLength);
+         
         /* while (rs.next()) {
         	  int i = rs.getInt("userid");
         	  String str = rs.getString("username");

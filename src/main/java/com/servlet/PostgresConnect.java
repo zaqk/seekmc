@@ -238,9 +238,9 @@ public class PostgresConnect extends HttpServlet {
          
 //------------------------------------------SESSION--------------------------------------------------
 
-         
-         request.setAttribute("songNameArray", songNameArray);
-         request.setAttribute("linkArray", linkArray);
+         HttpSession session = request.getSession();
+         session.setAttribute("songNameArray", songNameArray);
+         session.setAttribute("linkArray", linkArray);
          
          
          response.sendRedirect("/Search.jsp");

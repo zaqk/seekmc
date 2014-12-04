@@ -36,6 +36,8 @@ public class ResultSetBean {
 	public int getLinkListLength() {
 		return linkListLength;
 	}
+	
+	
 
 	public String[] copySongNameListArray(String[] songNameArray) {
 

@@ -44,7 +44,7 @@ for(int i = 0; i != songNameArray.length; i++){
 <tr>
 <td>
 <b>Link: </b>&nbsp;&nbsp;</td>
-<td><a href ="<%= linkArray[i]%>"><%= linkArray[i] %></a>
+<td><a href ="google.com">google</a>
 <br/>
 </td>
 </tr>

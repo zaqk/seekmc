@@ -96,8 +96,8 @@ public class ResultSetBean {
 			linkList.add(initialLinkNameList.get(i));
 		}
 	}
-	public String[] debugList(){
-		return createSongNameListArray();
+	public String debugList(){
+		return createSongNameListArray().toString();
 	}
 
 }

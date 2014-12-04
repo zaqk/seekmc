@@ -220,10 +220,10 @@ public class PostgresConnect extends HttpServlet {
          
          while(rs.next()){
         	 songName = rs.getString("song_name");
-        	 rsBean.addToSongNameList("song_name");
+        	 rsBean.addToSongNameList(songName);
         	 
         	 linkName = rs.getString("link");
-        	 rsBean.addToLinkList("link"); 
+        	 rsBean.addToLinkList(linkName); 
          }
          
          

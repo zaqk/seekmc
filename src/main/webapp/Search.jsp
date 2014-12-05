@@ -11,7 +11,7 @@
 <b>Search</b>
 Attributes:&nbsp; 
 	<c:forEach var="i" begin="0" end="${length - 1}"> 
-		${attributeDisplayArray[i]}, 
+		${attributePreferences[i]}, 
 	</c:forEach>
 <table>
     <c:forEach var="i" begin="0" end="${length - 1}">  

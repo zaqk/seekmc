@@ -8,10 +8,10 @@
 <title>MajesticX</title>
 </head>
 <body>
-<b>Search</b>
+<b>Search</b><br/>
 Attributes:&nbsp; 
 	<c:forEach var="i" begin="0" end="${length - 1}"> 
-		${attributePreferences[i]}, 
+		${attributePreferences[i]}&nbsp;
 	</c:forEach>
 <table>
     <c:forEach var="i" begin="0" end="${length - 1}">  

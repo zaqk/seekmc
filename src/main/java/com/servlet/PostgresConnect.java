@@ -236,6 +236,7 @@ public class PostgresConnect extends HttpServlet {
          
          for(int i = 0; i < attributePreferences.length; i++ ){
         	attributeDisplayArray[i] = attributePreferences[i];
+        	attributeDisplayArray[i].trim();
          }
          
 //------------------------------------------SESSION--------------------------------------------------

@@ -9,16 +9,6 @@
     	<welcome-file>Home.jsp</welcome-file>
   	</welcome-file-list>
     
-  	<servlet>
-    	<servlet-name>hello</servlet-name>
-    	<servlet-class>com.example.HelloServlet</servlet-class>
-  	</servlet>
-  
-   	<servlet>
-    	<servlet-name>connection</servlet-name>
-    	<servlet-class>com.servlet.Connection</servlet-class>
-  	</servlet>
-  
     <servlet>
     	<servlet-name>p</servlet-name>
     	<servlet-class>com.servlet.PostgresConnect</servlet-class>

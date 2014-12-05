@@ -78,7 +78,7 @@ public class PostgresConnect extends HttpServlet {
          
          
          
-          if(attributePreferences.length != 0){
+          if(attributePreferences != null){
 
          	List<String> attributePreferencesList = Arrays.asList(attributePreferences);
          
@@ -211,15 +211,10 @@ public class PostgresConnect extends HttpServlet {
          
          ResultSet rs = stmt.executeQuery(query);
          
-         ResultSetBean rsBean = new ResultSetBean();
-         
          List<String> initialSongNameList = new ArrayList<String>();
          
          List <String> initialLinkNameList = new ArrayList<String>();
          
-         int songListLength = initialSongNameList.size();
-         
-         rsBean.setSongNameListLength(songListLength);
          
          while(rs.next()){
         	 String songName = rs.getString("song_name");
@@ -230,8 +225,6 @@ public class PostgresConnect extends HttpServlet {
         	 
          }
          
-         rsBean.cloneLists(initialSongNameList);
-         
          
          String [] songNameArray = initialSongNameList.toArray(new String[initialSongNameList.size()]);
          
@@ -239,7 +232,6 @@ public class PostgresConnect extends HttpServlet {
          
          int arrayLength = songNameArray.length;
          
-         rsBean.setSongNameListLength(songNameArray.length);
 
          
 //------------------------------------------SESSION--------------------------------------------------
@@ -251,83 +243,7 @@ public class PostgresConnect extends HttpServlet {
          getServletConfig().getServletContext();
          RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
         		 dispatcher.forward(request, response);
-         
-         
-        /* while(rs.next()){
-        	 songName = rs.getString("song_name");
-        	 rsBean.addToSongNameList(songName);
-        	 
-        	 linkName = rs.getString("link");
-        	 rsBean.addToLinkList(linkName); 
-         }*/
-         
-         
-         
-         
-         
-         
-         
-         
-         /*Array sna = rs.getArray("song_name");//create sql array
-         String[] initialSongNameArray = (String[])sna.getArray();//convert sql array to array
-         int songNameArrayLength = initialSongNameArray.length;//grabs length will use later
-         
-         Array la = rs.getArray("link");//same as above but for song links
-         String[] initialLinkArray = (String[])la.getArray();
-         int linkArrayLength = initialLinkArray.length;
-         
-         List<String> initialSongNameList = Arrays.asList(initialSongNameArray);//converts arrays to lists
-         List<String> initialLinkList = Arrays.asList(initialLinkArray);		//for use in rsBean.*/
-         
-         
-         
-        
-         //request.setAttribute("songNameList", songNameList);
-         //request.setAttribute("linkList", linkList);
-         //response.sendRedirect("/Search.jsp");
-         
-        
-        /*
-         
-
-         
-         //Search Engine-------------------------------------------------------------------------------------
-         
-         
-         
-         
-         
-         out = response.getWriter();
-         
-         out.print("<html><body>");
-         out.print("<center><h1>Matching Songs</h1></center>");
-         //out.print(query);
-         out.print("<br/>");
-         out.print("<b>Attributes: </b>");
-         for(String s : attributePreferences){
-         	out.print(s+", ");
-         }
-         out.print("<br/>");
-         out.print("<br/>");
-         int i = 1;
-         while(rs.next())
-         {	
-         	
-         	
-             out.print("<tr>");
-             out.print("<td><b>"+ i +". ");
-             out.print("Song Name: </b>" + rs.getString("song_name") + "</td>");
-             out.print("</tr><br/>");
-             out.print("&nbsp;&nbsp;&nbsp;&nbsp;");
-             out.print("<b>Link: </b> &nbsp;&nbsp;");
-             out.print("<tr>");
-             out.print("<td><a href =\"" +  rs.getString("link") + "\">" +rs.getString("link") + "</a></td>");
-             out.print("</tr>"); 
-             out.print("<br/>"); 
-             out.print("<br/>");
-             i++;
-         }
-     		out.print("</body></html>");*/
+       
      		
 	     } catch (ClassNotFoundException e1) {
 				e1.printStackTrace();

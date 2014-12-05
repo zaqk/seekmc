@@ -20,7 +20,7 @@
 </tr>
 <tr>
 <td>
-<b>Link: </b><a href ="${linkArray[i]}">${linkArray[i]}</a></td>
+<b>Link: </b><a href ="${linkArray[i]}" target="_blank">${linkArray[i]}</a></td>
 </tr>
     </c:forEach>
 </table>

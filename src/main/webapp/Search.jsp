@@ -9,6 +9,10 @@
 </head>
 <body>
 <b>Search</b>
+Attributes:&nbsp; 
+	<c:forEach var="i" begin="0" end="${length - 1}"> 
+		${attributeDisplayArray[i]}, 
+	</c:forEach>
 <table>
     <c:forEach var="i" begin="0" end="${length - 1}">  
  

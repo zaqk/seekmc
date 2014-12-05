@@ -232,14 +232,20 @@ public class PostgresConnect extends HttpServlet {
          
          int arrayLength = songNameArray.length;
          
-
+         String [] attributeDisplayArray = new String [(attributePreferences.length)];
+         
+         for(int i = 0; i < attributePreferences.length; i++ ){
+        	attributeDisplayArray[i] = attributePreferences[i];
+         }
          
 //------------------------------------------SESSION--------------------------------------------------
 
          HttpSession session = request.getSession();
+         
          session.setAttribute("length", arrayLength);
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);
+         session.setAttribute("attributeDisplayArray", attributeDisplayArray);
          getServletConfig().getServletContext();
          RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
         		 dispatcher.forward(request, response);

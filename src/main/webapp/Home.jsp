@@ -20,15 +20,15 @@ Experimental:<input type="checkbox" name="attributePreference" value="experiment
 
 <br/>
 
-&nbsp;House/Electronic Influenced:<input type="checkbox" name="attributePreference" value="house_influenced"/>
+ - House/Electronic Influenced:<input type="checkbox" name="attributePreference" value="house_influenced"/>
 
 <br/>
 
-&nbsp;Hip Hop Influenced:<input type="checkbox" name="attributePreference" value="hip_hop_influenced"/>
+ - Hip Hop Influenced:<input type="checkbox" name="attributePreference" value="hip_hop_influenced"/>
 
 <br/>
 
-&nbsp;Indie Influenced:<input type="checkbox" name="attributePreference" value="indie_influenced"/>
+ - Indie Influenced:<input type="checkbox" name="attributePreference" value="indie_influenced"/>
 
 <br/>
 
@@ -46,68 +46,68 @@ Indie: <input type="checkbox" name="attributePreference" value="indie"/>
 <br/>
 
 
-&nbsp;&nbsp;Heavy Sub Bass:<input type="checkbox" name="attributePreference" value="heavy_sub_bass"/>
+ -  - Heavy Sub Bass:<input type="checkbox" name="attributePreference" value="heavy_sub_bass"/>
 
 <br/>
 
-&nbsp;&nbsp;Poppy:<input type="checkbox" name="attributePreference" value="poppy"/>
+ -  - Poppy:<input type="checkbox" name="attributePreference" value="poppy"/>
 
 <br/>
 
-&nbsp;&nbsp;Energetic:<input type="checkbox" name="attributePreference" value="energetic"/>
+ -  - Energetic:<input type="checkbox" name="attributePreference" value="energetic"/>
 
 <br/>
 
-&nbsp;&nbsp;Calm:<input type="checkbox" name="attributePreference" value="calm"/>
+ -  - Calm:<input type="checkbox" name="attributePreference" value="calm"/>
 
 <br/>
 
-&nbsp;&nbsp;Aggressive:<input type="checkbox" name="attributePreference" value="aggressive"/>
+ -  - Aggressive:<input type="checkbox" name="attributePreference" value="aggressive"/>
 
 <br/>
 
-&nbsp;&nbsp;Ethereal:<input type="checkbox" name="attributePreference" value="ethereal"/>
-
-<br/>
-<br/>
-
-
-&nbsp;&nbsp;&nbsp;Jazz Influenced:<input type="checkbox" name="attributePreference" value="jazz_influenced"/>
-
-<br/>
-
-&nbsp;&nbsp;&nbsp;Trap Influenced:<input type="checkbox" name="attributePreference" value="trap_influenced"/>
-
-<br/>
-
-&nbsp;&nbsp;&nbsp;R&B Influenced:<input type="checkbox" name="attributePreference" value="rnb influenced"/>
-
-<br/>
-
-&nbsp;&nbsp;&nbsp;Funk Influenced:<input type="checkbox" name="attributePreference" value="funk_influenced"/>
-
-<br/>
-
-&nbsp;&nbsp;&nbsp;Old School Vibes:<input type="checkbox" name="attributePreference" value="old_school_vibes"/>
+ -  - Ethereal:<input type="checkbox" name="attributePreference" value="ethereal"/>
 
 <br/>
 <br/>
 
 
-
-&nbsp;&nbsp;Male Vocals:<input type="checkbox" name="attributePreference" value="male_vocals"/>
-
-<br/>
-
-&nbsp;&nbsp;Female Vocals:<input type="checkbox" name="attributePreference" value="female_vocals"/>
+ -  -  - Jazz Influenced:<input type="checkbox" name="attributePreference" value="jazz_influenced"/>
 
 <br/>
 
-&nbsp;&nbsp;Heavy Vocal Manipulation:<input type="checkbox" name="attributePreference" value="heavy_vocal_manipulation"/>
+ -  -  - Trap Influenced:<input type="checkbox" name="attributePreference" value="trap_influenced"/>
 
 <br/>
 
-&nbsp;&nbsp;Instrumental:<input type="checkbox" name="attributePreference" value="instrumental"/>
+ -  -  - R&B Influenced:<input type="checkbox" name="attributePreference" value="rnb influenced"/>
+
+<br/>
+
+ -  -  - Funk Influenced:<input type="checkbox" name="attributePreference" value="funk_influenced"/>
+
+<br/>
+
+ -  -  - Old School Vibes:<input type="checkbox" name="attributePreference" value="old_school_vibes"/>
+
+<br/>
+<br/>
+
+
+
+ -  - Male Vocals:<input type="checkbox" name="attributePreference" value="male_vocals"/>
+
+<br/>
+
+ -  - Female Vocals:<input type="checkbox" name="attributePreference" value="female_vocals"/>
+
+<br/>
+
+ -  - Heavy Vocal Manipulation:<input type="checkbox" name="attributePreference" value="heavy_vocal_manipulation"/>
+
+<br/>
+
+ -  - Instrumental:<input type="checkbox" name="attributePreference" value="instrumental"/>
 
 <br/>
 

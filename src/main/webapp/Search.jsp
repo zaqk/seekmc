@@ -6,7 +6,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>MajesticX</title>
+<title>MCXS</title>
 </head>
 <div id="header">
 					<div class="search-logo">
@@ -30,7 +30,7 @@
     		<c:forEach var="i" begin="0" end="${length - 1}">  
  				<div class="song">
   					<div class="song_name">
-						${i + 1}. SongName:  ${songNameArray[i]} 
+						${i + 1}. Song Name:  ${songNameArray[i]} 
 					</div>
 					</br>
 					</br>

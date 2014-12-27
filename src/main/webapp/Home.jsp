@@ -40,9 +40,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -53,9 +53,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -65,9 +65,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -78,9 +78,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -94,9 +94,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -107,9 +107,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -120,9 +120,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -140,9 +140,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -153,9 +153,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -166,9 +166,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -179,9 +179,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -192,9 +192,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -205,9 +205,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -224,9 +224,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -238,9 +238,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -251,9 +251,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -264,9 +264,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -277,9 +277,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -296,9 +296,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -310,9 +310,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -324,9 +324,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>
@@ -337,9 +337,9 @@ MAJESTIC CASUAL SEARCH
 					<div class="toggle on">
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
-								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">ON</div>
+								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>
 								<div style="height: 35px; width: 35px; margin-left: -17.5px;" class="toggle-blob"></div>
-								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">OFF</div>
+								<div style="height: 35px; width: 92.5px; margin-left: -17.5px; text-indent: 17.5px; line-height: 35px;" class="toggle-off active">NO</div>
 							</div>
 						</div>
 					</div>

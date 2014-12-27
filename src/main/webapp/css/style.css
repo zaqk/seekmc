@@ -334,5 +334,17 @@ color:#6E6527;
 
 }.btn_search:active {
 	position: relative;
+}
 
+/*----------------------------------------------------about--------------------------------------------------*/
+#about_color{
+background-color:#B6CEFF !important
+}
+.about_statement{
+margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+text-align:center;
+font-size:14pt;
+width:60%;
 }

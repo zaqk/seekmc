@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>MCXSearch</title>
+<title>MCXS</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>

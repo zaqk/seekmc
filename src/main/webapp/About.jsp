@@ -10,7 +10,7 @@
 majestic casual
 </a>
 &nbsp;
-<a href="main.html" class="toplink">
+<a href="/Home.jsp" class="toplink">
 search
 </a>
 &nbsp;
@@ -33,7 +33,7 @@ MAJESTIC CASUAL SEARCH
 	This site has no affiliation with Majestic Casual.</p>
 	</br>
 	</br>
-	<form action="/home">
+	<form action="/Home.jsp">
 				<input type="submit" class="btn_search" style="margin-left: 50%; margin-right: 50%;" name="back" value="back"/>
 			</form>
 	</body>

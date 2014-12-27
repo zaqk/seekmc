@@ -44,13 +44,12 @@
     		
   	  </div>
   	  
-  	  <div class="search_back">
   	  
   	  <form action="/Home.jsp">
 		<input type="submit" class="btn" value="back"/>
 	  </form>
 	  
-	  </div>
+
 	</body>
   <div id="left" class="column">
   </div>

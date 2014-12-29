@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/toggles.css"></link>
 <link rel="stylesheet" type="text/css" href="css/toggles-dark.css"></link>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/toggles.js" type="text/javascript"></script>
+<script src="js/toggles.min.js" type="text/javascript"></script>
 </head>
 <div id="header">
 <div class="linkbar">

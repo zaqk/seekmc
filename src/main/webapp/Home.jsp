@@ -27,7 +27,7 @@ contact
 </div>
 
 <h1 class="logo">
-MAJESTIC CASUAL SEARCH
+MAJESTIC CASUAL SEARCH v.1
 </h1>
 </div>
 <div id="container">

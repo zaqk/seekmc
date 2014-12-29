@@ -21,7 +21,7 @@
 			<c:forEach var="i" begin="0" end="${length - 1}"> 
 				${attributePreferences[i]}&nbsp;
 			</c:forEach>
-			</div>  
+			</div>
 			</br>
 			</br>
 			

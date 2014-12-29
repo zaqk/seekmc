@@ -50,7 +50,7 @@ MAJESTIC CASUAL SEARCH
 			
 			Deep House <input type="checkbox" class="checkbox deephouse" hidden="true" name="attributePreference"  value="deep_house"/>
 				<div class="toggle deephouse tContainer toggle-dark">
-					<div class="toggle on">
+					<div class="toggle on">   
 						<div class="toggle-slide">
 							<div style="width: 185px; margin-left: -75px;" class="toggle-inner">
 								<div style="height: 35px; width: 92.5px; text-indent: -17.5px; line-height: 35px;" class="toggle-on">YES</div>

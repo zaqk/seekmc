@@ -241,9 +241,21 @@ public class PostgresConnect extends HttpServlet {
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);
          session.setAttribute("attributePreferences", attributePreferences);
+         
+         
+//------------------------------What page should we send user to?----------------------------------         
          getServletConfig().getServletContext();
-         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
-        		 dispatcher.forward(request, response);
+         
+         if(initialSongNameList.size() > 0){
+        	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
+    		 dispatcher.forward(request, response);
+         }
+         else if(initialSongNameList.size() == 0){
+        	 session.setAttribute("errorMessage", "Sorry, We don't have any songs that meet that criteria");
+        	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Error.jsp");
+    		 dispatcher.forward(request, response);
+         }
+
        
      		
 	     } catch (ClassNotFoundException e1) {

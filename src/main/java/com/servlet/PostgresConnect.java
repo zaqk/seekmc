@@ -212,7 +212,18 @@ public class PostgresConnect extends HttpServlet {
          
          boolean noResults = false;
          
-
+         if(!rs.isBeforeFirst()){
+        	 
+        	 noResults = true;
+        	 initialSongNameList.add("null");
+        	 initialLinkNameList.add("null");
+             //if Array is empty the html page will display an ugly error
+             //if noResults is true html page will display a more fitting error message.
+        	 
+        	 //i need to add something to the array list if there are no values 
+        	 //because otherwise it would send an array out of bounds error
+        	 
+         }else{
         
 
         	 
@@ -224,7 +235,7 @@ public class PostgresConnect extends HttpServlet {
         	 initialLinkNameList.add(linkName);
         	 
          	}
-         
+         }
          
          
          String [] songNameArray = initialSongNameList.toArray(new String[initialSongNameList.size()]);
@@ -232,7 +243,7 @@ public class PostgresConnect extends HttpServlet {
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
          
 
-
+         int songListLength = songNameArray.length;
          
          
 //------------------------------------------SESSION--------------------------------------------------
@@ -242,6 +253,7 @@ public class PostgresConnect extends HttpServlet {
          session.setAttribute("noResults", noResults);
          session.setAttribute("attributePreferences", attributePreferences);
          session.setAttribute("length", arrayLength);
+         session.setAttribute("songListLength", songListLength);
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);  
 

@@ -11,7 +11,6 @@
 <div id="header">
 					<div class="search-logo">
 					<h1>Search Results</h1><br/>
-					<c:out value="${noResults}"/>
 					</div>
 
 </div>
@@ -30,7 +29,10 @@
 			<c:choose>
 			
 				<c:when test = "${noResults == true}">
-					<p> ERROR </p>
+				<div class="song_name">
+					<p> Sorry, there are no songs that meet that meet that criteria.
+						Try a less specific search. </p>
+				</div>
 				</c:when>
 					<c:otherwise> 
     					<c:forEach var="i" begin="0" end="${length - 1}">  

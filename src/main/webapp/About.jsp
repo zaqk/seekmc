@@ -29,9 +29,9 @@ MAJESTIC CASUAL SEARCH
   <div id="center" class="column">
 	<body id="about_color" class="overflow">
 	<p class="about_statement">Majestic Casual Search is a search engine for the Majestic Casual YouTube channel. </br>
-	This site has no affiliation with Majestic Casual.
+	This site has no affiliation with Majestic Casual.</br></br>
 	I'm also aware that my definition of any genre is most likely different from yours.
-	However, If you find any discrepancies please feel free to let me know. Feedback is appreciated!
+	However, If you find any discrepancies please feel free to let me know. Feedback is appreciated!</br>
 	Contact me at kzachary4@gmail.com. Thanks.</p>
 	</br>
 	</br>

@@ -221,6 +221,8 @@ public class PostgresConnect extends HttpServlet {
          if(!rs.isBeforeFirst()){
         	 
         	 noResults = true;
+        	 initialSongNameList.add("null");
+        	 initialSongNameList.add("null");
         	 
          }else{
         

@@ -28,7 +28,7 @@
 		<div class="result">
 			<c:choose>
 			
-				<c:when test = "${songNameArray[0] == null}">
+				<c:when test = "${noResults == true}">
 					<p> ERROR </p>
 				</c:when>
 				<c:otherwise> 

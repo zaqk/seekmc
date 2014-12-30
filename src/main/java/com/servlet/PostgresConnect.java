@@ -230,6 +230,16 @@ public class PostgresConnect extends HttpServlet {
          
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
          
+         
+         boolean noResults = false;
+         
+         if(songNameArray[0] == null){
+        	 
+        	 noResults = true;
+        	 
+         }
+         //if songNameArray is empty the html page will display an ugly error
+         //if noResults is true html page will display a more fitting error message.
 
          int arrayLength = songNameArray.length;
          
@@ -237,6 +247,7 @@ public class PostgresConnect extends HttpServlet {
 
          HttpSession session = request.getSession();
          
+         session.setAttribute("noResults", noResults);
          session.setAttribute("length", arrayLength);
          session.setAttribute("songNameArray", songNameArray);
          session.setAttribute("linkArray", linkArray);

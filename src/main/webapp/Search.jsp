@@ -11,6 +11,7 @@
 <div id="header">
 					<div class="search-logo">
 					<h1>Search Results</h1><br/>
+					<c:out value="${noResults}"/>
 					</div>
 
 </div>

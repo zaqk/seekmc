@@ -249,12 +249,10 @@ public class PostgresConnect extends HttpServlet {
          
          session.setAttribute("noResults", noResults);
          session.setAttribute("attributePreferences", attributePreferences);
-         
-         if(!noResults){
-             session.setAttribute("length", arrayLength);
-             session.setAttribute("songNameArray", songNameArray);
-             session.setAttribute("linkArray", linkArray);  
-         }
+         session.setAttribute("length", arrayLength);
+         session.setAttribute("songNameArray", songNameArray);
+         session.setAttribute("linkArray", linkArray);  
+
          
 
          

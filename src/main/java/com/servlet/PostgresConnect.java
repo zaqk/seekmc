@@ -75,6 +75,8 @@ public class PostgresConnect extends HttpServlet {
          
          String [] attributePreferences = request.getParameterValues("attributePreference");
          
+         int arrayLength = attributePreferences.length;
+         
          
          
          
@@ -249,7 +251,7 @@ public class PostgresConnect extends HttpServlet {
          
 
 
-         int arrayLength = songNameArray.length;
+         
          
 //------------------------------------------SESSION--------------------------------------------------
 

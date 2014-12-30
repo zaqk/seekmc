@@ -215,19 +215,22 @@ public class PostgresConnect extends HttpServlet {
          
          List <String> initialLinkNameList = new ArrayList<String>();
          
-         boolean noResults = true;
-         
+         boolean noResults = false;
          
          if(!rs.isBeforeFirst()){
         	 
         	 noResults = true;
         	 initialSongNameList.add("null");
         	 initialSongNameList.add("null");
+             //if Array is empty the html page will display an ugly error
+             //if noResults is true html page will display a more fitting error message.
+        	 
+        	 //i need to add something to the array list if there are no values 
+        	 //because otherwise it would send an array out of bounds error
         	 
          }else{
         
-             //if Array is empty the html page will display an ugly error
-             //if noResults is true html page will display a more fitting error message.
+
         	 
          while(rs.next()){
         	 String songName = rs.getString("song_name");
@@ -265,15 +268,10 @@ public class PostgresConnect extends HttpServlet {
 //------------------------------What page should we send user to?----------------------------------         
          getServletConfig().getServletContext();
          
-         if(initialSongNameList.size() > 0){
-        	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
-    		 dispatcher.forward(request, response);
-         }
-         else if(initialSongNameList.size() == 0){
-        	 session.setAttribute("errorMessage", "Sorry, We don't have any songs that meet that criteria");
-        	 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Error.jsp");
-    		 dispatcher.forward(request, response);
-         }
+         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
+    	 dispatcher.forward(request, response);
+         
+
 
        
      		

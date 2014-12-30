@@ -35,7 +35,7 @@
 				</div>
 				</c:when>
 					<c:otherwise> 
-    					<c:forEach var="i" begin="0" end="${length - 1}">  
+    					<c:forEach var="i" begin="0" end="${songListLength - 1}">  
  							<div class="song">
   								<div class="song_name">
 									${i + 1}. Song Name:  ${songNameArray[i]} 

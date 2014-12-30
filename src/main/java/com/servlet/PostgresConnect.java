@@ -218,7 +218,7 @@ public class PostgresConnect extends HttpServlet {
          boolean noResults = true;
          
          
-         if(rs.wasNull()){
+         if(!rs.isBeforeFirst()){
         	 
         	 noResults = true;
         	 

@@ -28,7 +28,7 @@
 		<div class="result">
 			<c:choose>
 			
-				<c:when test = "${i < 0}">
+				<c:when test = "${length == null}">
 					<p> ERROR </p>
 				</c:when>
 				<c:otherwise> 

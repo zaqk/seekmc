@@ -155,14 +155,7 @@ public class PostgresConnect extends HttpServlet {
          	
          	
          	
-         } else {
-         	out = response.getWriter();
-         	out.print("<html><body>");
-             out.print("<center><h1>Pick at least one attribute!!</h1></center>");
-             out.print("</body></html>");
-             
-         	
-         }
+         } 
          Statement stmt = con.createStatement();
          String query = "SELECT * FROM main WHERE "
          + "experimental = " 
@@ -219,7 +212,7 @@ public class PostgresConnect extends HttpServlet {
          
          boolean noResults = false;
          
-         if(!rs.isBeforeFirst()){
+         if(!rs.wasNull()){
         	 
         	 noResults = true;
         	 initialSongNameList.add("null");

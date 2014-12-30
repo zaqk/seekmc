@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>MXCS</title>
+<title>SeekMC</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/toggles.css"></link>
@@ -17,17 +17,16 @@
 majestic casual
 </a>
 &nbsp;
+&nbsp;
+&nbsp;
 <a href="/About.jsp" class="toplink">
 about
 </a>
 &nbsp;
-<a href="helpPageHere" class="toplink">
-contact
-</a>
 </div>
 
 <h1 class="logo">
-MAJESTIC CASUAL SEARCH v.1.1
+MAJESTIC CASUAL SEARCH
 </h1>
 </div>
 <div id="container">

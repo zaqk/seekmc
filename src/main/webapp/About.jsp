@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>MCXS</title>
+<title>SeekMC</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css\style.css">
 <link rel="stylesheet" type="text/css" href="css\toggles.css"></link>
@@ -14,13 +14,12 @@
 majestic casual
 </a>
 &nbsp;
+&nbsp;
+&nbsp;
 <a href="/Home.jsp" class="toplink">
 search
 </a>
-&nbsp;
-<a href="helpPageHere" class="toplink">
-contact
-</a>
+
 &nbsp;
 </div>
 
@@ -34,7 +33,9 @@ MAJESTIC CASUAL SEARCH
   <div id="center" class="column">
 	<body id="about_color" class="overflow">
 	<p class="about_statement">Majestic Casual Search is a search engine for the Majestic Casual YouTube channel. </br>
-	This site has no affiliation with Majestic Casual.</p>
+	This site has no affiliation with Majestic Casual.
+	</br>
+	Contact me at kzachary4@gmail.com. Thanks.</p>
 	</br>
 	</br>
 	<form action="/Home.jsp">

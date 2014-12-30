@@ -30,7 +30,6 @@ MAJESTIC CASUAL SEARCH
 	<body id="about_color" class="overflow">
 	<p class="about_statement">Majestic Casual Search is a search engine for the Majestic Casual YouTube channel. </br>
 	This site has no affiliation with Majestic Casual.
-	</br>
 	Contact me at kzachary4@gmail.com. Thanks.</p>
 	</br>
 	</br>

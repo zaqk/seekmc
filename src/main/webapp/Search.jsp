@@ -26,29 +26,29 @@
 			</br>
 			
 		<div class="result">
-		<c:catch var ="errormsg">
-    		<c:forEach var="i" begin="0" end="${length - 1}">  
- 				<div class="song">
-  					<div class="song_name">
-						${i + 1}. Song Name:  ${songNameArray[i]} 
-					</div>
-					</br>
-					</br>
+			<c:choose>
+			
+				<c:when test = "${length < 0}">
+					<p> ERROR </p>
+				</c:when>
+				<c:otherwise> 
+    				<c:forEach var="i" begin="0" end="${length - 1}">  
+ 						<div class="song">
+  							<div class="song_name">
+								${i + 1}. Song Name:  ${songNameArray[i]} 
+							</div>
+								</br>
+								</br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Link: &nbsp;<a href ="${linkArray[i]}" class="video_link" target="_blank">${linkArray[i]}</a>
-					</br>
-					</br>
-					</br>
-				</div>
-    		</c:forEach>
-    	</c:catch>
-    		<c:if test = "${errormsg != null}">
-  				<p>
-  				There has been an exception raised in the above
- 					 arithmetic operation. Please fix the error.
-  						Exception is: ${errormsg}
-  				</p>
-			</c:if>
+								</br>
+								</br>
+								</br>
+						</div>
+    				</c:forEach>
+    				</c:otherwise>
+    				
+    		</c:choose>
   	  </div>
   	  
   	  

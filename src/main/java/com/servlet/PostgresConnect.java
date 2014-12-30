@@ -216,7 +216,7 @@ public class PostgresConnect extends HttpServlet {
         	 
         	 noResults = true;
         	 initialSongNameList.add("null");
-        	 initialSongNameList.add("null");
+        	 initialLinkNameList.add("null");
              //if Array is empty the html page will display an ugly error
              //if noResults is true html page will display a more fitting error message.
         	 

@@ -26,7 +26,7 @@ about
 </div>
 
 <h1 class="logo">
-MAJESTIC CASUAL SEARCH v.1.12
+MAJESTIC CASUAL SEARCH
 </h1>
 </div>
 <div id="container">

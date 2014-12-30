@@ -48,7 +48,7 @@
  					 arithmetic operation. Please fix the error.
   						Exception is: ${errormsg}
   				</p>
-					</c:if>
+			</c:if>
   	  </div>
   	  
   	  
@@ -58,6 +58,7 @@
 	  
 
 	</body>
+	<div class="copyright"> © 2014 Zachary King </div> 
   <div id="left" class="column">
   </div>
   <div id="right" class="column">

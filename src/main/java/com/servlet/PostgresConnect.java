@@ -212,7 +212,7 @@ public class PostgresConnect extends HttpServlet {
          
          boolean noResults = false;
          
-         if(!rs.wasNull()){
+         if(!rs.isBeforeFirst()){
         	 
         	 noResults = true;
         	 initialSongNameList.add("null");

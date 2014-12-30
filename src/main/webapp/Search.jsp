@@ -62,7 +62,6 @@
 	  
 
 	</body>
-	<div class="copyright"> © 2014 Zachary King </div> 
   <div id="left" class="column">
   </div>
   <div id="right" class="column">

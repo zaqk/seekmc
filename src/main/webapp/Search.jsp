@@ -31,21 +31,22 @@
 				<c:when test = "${noResults == true}">
 					<p> ERROR </p>
 				</c:when>
-				<c:otherwise> 
-    				<c:forEach var="i" begin="0" end="${length - 1}">  
- 						<div class="song">
-  							<div class="song_name">
-								${i + 1}. Song Name:  ${songNameArray[i]} 
-							</div>
-								</br>
-								</br>
+					<c:otherwise> 
+    					<c:forEach var="i" begin="0" end="${length - 1}">  
+ 							<div class="song">
+  								<div class="song_name">
+									${i + 1}. Song Name:  ${songNameArray[i]} 
+								</div>
+									</br>
+									</br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Link: &nbsp;<a href ="${linkArray[i]}" class="video_link" target="_blank">${linkArray[i]}</a>
-								</br>
-								</br>
-								</br>
-						</div>
-    				</c:forEach>
+									
+									</br>
+									</br>
+									</br>
+							</div>
+    					</c:forEach>
     				</c:otherwise>
     				
     		</c:choose>

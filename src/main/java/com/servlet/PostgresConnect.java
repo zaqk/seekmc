@@ -211,7 +211,7 @@ public class PostgresConnect extends HttpServlet {
          
          ResultSet rs = stmt.executeQuery(query);
          
-         List<String> initialSongNameList = new ArrayList<String>();
+         List <String> initialSongNameList = new ArrayList<String>();
          
          List <String> initialLinkNameList = new ArrayList<String>();
          
@@ -248,10 +248,15 @@ public class PostgresConnect extends HttpServlet {
          HttpSession session = request.getSession();
          
          session.setAttribute("noResults", noResults);
-         session.setAttribute("length", arrayLength);
-         session.setAttribute("songNameArray", songNameArray);
-         session.setAttribute("linkArray", linkArray);
          session.setAttribute("attributePreferences", attributePreferences);
+         
+         if(!noResults){
+             session.setAttribute("length", arrayLength);
+             session.setAttribute("songNameArray", songNameArray);
+             session.setAttribute("linkArray", linkArray);  
+         }
+         
+
          
          
 //------------------------------What page should we send user to?----------------------------------         

@@ -231,7 +231,7 @@ public class PostgresConnect extends HttpServlet {
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
          
          
-         boolean noResults = false;
+         boolean noResults = true;
          
          if(songNameArray[0] == null){
         	 

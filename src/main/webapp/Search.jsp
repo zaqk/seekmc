@@ -26,7 +26,7 @@
 			</br>
 			
 		<div class="result">
-		
+		<c:catch var ="errormsg">
     		<c:forEach var="i" begin="0" end="${length - 1}">  
  				<div class="song">
   					<div class="song_name">
@@ -41,7 +41,14 @@
 					</br>
 				</div>
     		</c:forEach>
-    		
+    	</c:catch>
+    		<c:if test = "${errormsg != null}">
+  				<p>
+  				There has been an exception raised in the above
+ 					 arithmetic operation. Please fix the error.
+  						Exception is: ${errormsg}
+  				</p>
+					</c:if>
   	  </div>
   	  
   	  

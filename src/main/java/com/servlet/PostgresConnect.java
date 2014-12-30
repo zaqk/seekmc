@@ -215,7 +215,18 @@ public class PostgresConnect extends HttpServlet {
          
          List <String> initialLinkNameList = new ArrayList<String>();
          
+         boolean noResults = true;
          
+         
+         if(rs.wasNull()){
+        	 
+        	 noResults = true;
+        	 
+         }else{
+        
+             //if Array is empty the html page will display an ugly error
+             //if noResults is true html page will display a more fitting error message.
+        	 
          while(rs.next()){
         	 String songName = rs.getString("song_name");
         	 String linkName = rs.getString("link");
@@ -223,6 +234,7 @@ public class PostgresConnect extends HttpServlet {
         	 initialSongNameList.add(songName);
         	 initialLinkNameList.add(linkName);
         	 
+         	}
          }
          
          
@@ -230,16 +242,7 @@ public class PostgresConnect extends HttpServlet {
          
          String [] linkArray = initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
          
-         
-         boolean noResults = true;
-         
-         if(songNameArray[0] == null){
-        	 
-        	 noResults = true;
-        	 
-         }
-         //if songNameArray is empty the html page will display an ugly error
-         //if noResults is true html page will display a more fitting error message.
+
 
          int arrayLength = songNameArray.length;
          

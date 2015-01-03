@@ -34,6 +34,11 @@
 						Try a less specific search. </p>
 				</div>
 				</c:when>
+				<c:when test = "${emptyResults == true }">
+					<div class="song_name">
+					<p> Choose at least one criterion to search for </p>
+					</div>
+					</c:when>
 					<c:otherwise> 
     					<c:forEach var="i" begin="0" end="${songListLength - 1}">  
  							<div class="song">

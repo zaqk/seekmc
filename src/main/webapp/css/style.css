@@ -361,17 +361,19 @@ width:60%;
 /* chrome and safari */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .diez  { position:relative !important;
-		 left:5%		!important;
 		 font-size:20px;
+		 text-align: left !important;
 		 }
 		 
 		 
  .diez_logo {
- 			margin-right:33% !important;
+ 			margin-right:auto !important;
+			position:relative !important;
+			text-align: left !important;
 
  			}
  .diez_btn {
- 			left: 40% !important;
+ 			left: 43% !important;
  
  				}			
 }

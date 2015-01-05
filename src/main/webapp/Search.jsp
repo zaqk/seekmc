@@ -35,7 +35,6 @@
 				</div>
 				</c:when>
 
-					</c:when>
 					<c:otherwise> 
     					<c:forEach var="i" begin="0" end="${songListLength - 1}">  
  							<div class="song">

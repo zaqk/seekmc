@@ -23,6 +23,11 @@
     	<servlet-name>p</servlet-name>
     	<servlet-class>com.servlet.PostgresConnect</servlet-class>
   	</servlet>
+  	
+  	<servlet>
+		<servlet-name>about</servlet-name>
+		<jsp-file>/About.jsp</jsp-file>
+	</servlet>
 
   	<servlet-mapping>
     	<servlet-name>hello</servlet-name>
@@ -38,6 +43,11 @@
     	<servlet-name>p</servlet-name>
     	<url-pattern>/search</url-pattern>
   	</servlet-mapping>
+  	
+  	<servlet-mapping>
+		<servlet-name>about</servlet-name>
+		<url-pattern>/about</url-pattern>
+	</servlet-mapping>
 
     <resource-ref>
     	<description>DB Connection</description>

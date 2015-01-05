@@ -61,7 +61,7 @@
   	  </div>
   	  
   	  
-  	  <form action="/Home.jsp">
+  	  <form action="/">
 		<input type="submit" class="btn_search" value="back"/>
 	  </form>
 	  

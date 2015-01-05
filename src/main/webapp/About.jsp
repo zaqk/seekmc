@@ -12,7 +12,7 @@ majestic casual
 &nbsp;
 &nbsp;
 &nbsp;
-<a href="/home" class="toplink">
+<a href="/" class="toplink">
 search
 </a>
 
@@ -35,7 +35,7 @@ MAJESTIC CASUAL SEARCH
 	Contact me at kzachary4@gmail.com. Thanks.</p>
 	</br>
 	</br>
-	<form action="/Home.jsp">
+	<form action="/">
 				<input type="submit" class="btn_search" style="margin-left: 50%; margin-right: 50%;" name="back" value="back"/>
 			</form>
 	</body>

@@ -30,7 +30,7 @@ about
 MAJESTIC CASUAL SEARCH
 </h1>
 </div>
-<div id="container">
+<div class="diez" id="container">
   <div id="center" class="column">
 	<body>
 	<div class="genre">

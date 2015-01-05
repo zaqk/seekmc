@@ -357,3 +357,11 @@ width:60%;
     -ms-user-select: none;
     user-select: none;
 }
+
+/* chrome and safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .diez  { position:relative !important;
+		 left:8%		!important;
+		 font-size:20px;
+		 }
+}

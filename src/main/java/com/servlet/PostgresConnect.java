@@ -175,10 +175,7 @@ public class PostgresConnect extends HttpServlet {
          		emptyArray = false;
          	}
          	
-         } else if (emptyArray){
-        	 
-        	 emptyResults = true;
-         }
+         } 
          Statement stmt = con.createStatement();
          String query = "SELECT * FROM main WHERE "
          + "experimental = " 

@@ -13,6 +13,7 @@
 </head>
 <div id="header">
 <div class="linkbar">
+<input type="checkbox" hidden="true" name="attributePreference"  value="null"/>
 <a href="https://www.youtube.com/channel/UCXIyz409s7bNWVcM-vjfdVA" class="toplink" target="_blank">
 majestic casual
 </a>

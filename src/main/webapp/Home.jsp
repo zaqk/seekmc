@@ -20,7 +20,7 @@ majestic casual
 &nbsp;
 &nbsp;
 &nbsp;
-<a href="/About.jsp" class="toplink">
+<a href="/about" class="toplink">
 about
 </a>
 &nbsp;

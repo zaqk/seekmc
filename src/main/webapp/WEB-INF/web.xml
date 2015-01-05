@@ -28,6 +28,11 @@
 		<servlet-name>about</servlet-name>
 		<jsp-file>/About.jsp</jsp-file>
 	</servlet>
+	
+	 <servlet>
+		<servlet-name>home</servlet-name>
+		<jsp-file>/Home.jsp</jsp-file>
+	</servlet>
 
   	<servlet-mapping>
     	<servlet-name>hello</servlet-name>
@@ -49,6 +54,11 @@
 		<url-pattern>/about</url-pattern>
 	</servlet-mapping>
 
+
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
     <resource-ref>
     	<description>DB Connection</description>
     		<res-ref-name>jdbc/testDB</res-ref-name>

@@ -12,7 +12,7 @@ majestic casual
 &nbsp;
 &nbsp;
 &nbsp;
-<a href="/Home.jsp" class="toplink">
+<a href="/home" class="toplink">
 search
 </a>
 

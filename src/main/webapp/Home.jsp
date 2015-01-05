@@ -26,7 +26,7 @@ about
 &nbsp;
 </div>
 
-<h1 class="logo">
+<h1 class="logo diez_logo">
 MAJESTIC CASUAL SEARCH
 </h1>
 </div>
@@ -353,7 +353,7 @@ MAJESTIC CASUAL SEARCH
 				<br/>
 		
 
-				<input type="submit" class="btn" name="submit" value="Search"/>
+				<input type="submit" class="btn diez_btn" name="submit" value="Search"/>
 		</form>
 	</body>
 	<div class="copyright"> © 2014 Zachary King </div> 

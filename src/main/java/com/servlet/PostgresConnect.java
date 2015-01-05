@@ -75,7 +75,9 @@ public class PostgresConnect extends HttpServlet {
          
          String [] attributePreferences = request.getParameterValues("attributePreference");
          
-         int arrayLength = attributePreferences.length;
+         
+         int arrayLength = 0;
+         
 
         boolean emptyResults = false;
         boolean emptyArray = true;
@@ -84,7 +86,8 @@ public class PostgresConnect extends HttpServlet {
           if(attributePreferences != null){
 
          	List<String> attributePreferencesList = Arrays.asList(attributePreferences);
-         
+         	
+         	arrayLength = attributePreferences.length;
          
          	if(attributePreferencesList.contains(DecoderRing.EXPERIMENTAL)){
          		qryExperimental = "1::bit";
@@ -265,6 +268,7 @@ public class PostgresConnect extends HttpServlet {
 
          int songListLength = songNameArray.length;
          
+
          
 //------------------------------------------SESSION--------------------------------------------------
 

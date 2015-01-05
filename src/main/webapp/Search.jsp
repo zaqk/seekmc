@@ -34,7 +34,11 @@
 						Try a less specific search. </p>
 				</div>
 				</c:when>
-
+				<c:when test = "${emptyArray == true }">
+					<div class="song_name">
+					<p> Choose at least one criterion to search for </p>
+					</div>
+					</c:when>
 					<c:otherwise> 
     					<c:forEach var="i" begin="0" end="${songListLength - 1}">  
  							<div class="song">

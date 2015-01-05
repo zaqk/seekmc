@@ -76,7 +76,7 @@ public class PostgresConnect extends HttpServlet {
          String [] attributePreferences = request.getParameterValues("attributePreference");
          
          
-         int arrayLength = 0;
+         int arrayLength = 1;
          
 
         boolean emptyResults = false;

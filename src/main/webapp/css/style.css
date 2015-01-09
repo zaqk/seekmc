@@ -184,7 +184,9 @@ width:16em;
 }
 
 
-
+.form{
+	white-space:nowrap;
+}
 
 .linkbar{
 color: #826128;

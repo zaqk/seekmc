@@ -33,7 +33,7 @@ MAJESTIC CASUAL SEARCH
 <div class="diez" id="container">
   <div id="center" class="column">
 	<body>
-	<div class="genre">
+	<div class="genre diez_genre">
 		<form action="/search" class="form" method="post">
 			 Experimental <input type="checkbox" class="checkbox experimental" hidden="true" name="attributePreference"  value="experimental"/>
 				<div class="toggle experimental tContainer toggle-dark">

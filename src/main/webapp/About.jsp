@@ -19,7 +19,7 @@ search
 &nbsp;
 </div>
 
-<h1 class="logo">
+<h1 class="about_logo">
 about 
 </br>
 MAJESTIC CASUAL SEARCH

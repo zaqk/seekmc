@@ -11,7 +11,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/toggles.js" type="text/javascript"></script>
 </head>
-<div id="header">
+<div id="header_main">
 <div class="linkbar">
 <input type="checkbox" hidden="true" name="attributePreference"  value="null"/>
 <a href="https://www.youtube.com/channel/UCXIyz409s7bNWVcM-vjfdVA" class="toplink" target="_blank">

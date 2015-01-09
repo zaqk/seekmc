@@ -360,6 +360,11 @@ width:60%;
     user-select: none;
 }
 
+#bottom_half{
+min-width:820px !important;
+position:relative;
+}
+
 /* chrome and safari */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .diez  { position:relative !important;

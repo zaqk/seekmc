@@ -129,6 +129,7 @@ MAJESTIC CASUAL SEARCH
 				</div>
 	</div>
 	</div>
+	<div id="bottom_half">
 	<div class="bottomMenu">
 			<div class="drop_downSC">			
 				Characteristics<div id="arrowSC" class="arrow-down"></div>
@@ -348,7 +349,7 @@ MAJESTIC CASUAL SEARCH
 				
 			
 		</div>
-
+		</div>
 		</div>
 				<br/>
 		

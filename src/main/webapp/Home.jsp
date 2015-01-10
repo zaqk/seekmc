@@ -33,6 +33,7 @@ MAJESTIC CASUAL SEARCH
 <div class="diez" id="container">
   <div id="center" class="column">
 	<body>
+	<div id="genre">
 	<div class="genre diez_genre">
 		<form action="/search" class="form" method="post">
 			 Experimental <input type="checkbox" class="checkbox experimental" hidden="true" name="attributePreference"  value="experimental"/>
@@ -129,6 +130,8 @@ MAJESTIC CASUAL SEARCH
 				</div>
 	</div>
 	</div>
+	</div>
+	<br/>
 	<div id="bottom_half">
 	<div class="bottomMenu">
 			<div class="drop_downSC">			
@@ -353,8 +356,9 @@ MAJESTIC CASUAL SEARCH
 		</div>
 				<br/>
 		
-
+			<div id="btn_container">
 				<input type="submit" class="btn diez_btn" name="submit" value="Search"/>
+				</div>
 		</form>
 	</body>
 	<div class="copyright"> © 2014 Zachary King </div> 

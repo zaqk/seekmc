@@ -57,10 +57,18 @@ padding-right:40%;
 
 
 
+#genre{
+min-width:820px !important;
+display:block;
+position:relative;
+}
 
 
-
-
+#btn_container{
+min-width:820px;
+position:relative;
+display:block;
+}
 
 
 

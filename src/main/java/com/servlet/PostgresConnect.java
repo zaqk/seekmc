@@ -33,9 +33,7 @@ import com.db.Db;
 public class PostgresConnect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public PostgresConnect() {
-        super();
-    }
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
@@ -79,7 +77,6 @@ public class PostgresConnect extends HttpServlet {
          int arrayLength = 1;
          
 
-        boolean emptyResults = false;
         boolean emptyArray = true;
          
          
@@ -297,14 +294,12 @@ public class PostgresConnect extends HttpServlet {
      		
 	     } catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
-				out.print("failed to load postresql driver");
 			} catch (URISyntaxException e) {
 				e.printStackTrace();
 				out.print(" URI ");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-				out.print(" SQLException");
 			}
 	}
 

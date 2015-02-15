@@ -54,7 +54,7 @@
 			<c:choose>
 			
 				<c:when test = "${noResults == true}">
-				<div class="song_name">
+				<div class="song_name pFont text-center">
 					<p> Sorry, there are no songs that meet that meet that criteria.
 						Try a less specific search. </p>
 				</div>

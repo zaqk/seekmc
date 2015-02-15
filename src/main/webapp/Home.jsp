@@ -439,7 +439,7 @@
 				</div><!--end bot menu--->
 			</div>
 	</div>
-					</form>
+					
 				</div><!--init jumbo-->
 					
 			</div>
@@ -596,5 +596,6 @@
 		});
 	
 		</script>
+		</form>
 	</body>
 </html>

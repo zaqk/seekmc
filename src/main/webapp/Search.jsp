@@ -4,9 +4,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<title>Majestic Casual Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bstrp/css/bootstrap.css" type="text/css" rel="stylesheet"></link>
+<link href="bstrp/css/style.css" type="text/css" rel="stylesheet"></link>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>SeekMC</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -20,16 +22,26 @@
 
 </script>
 </head>
-<div id="header">
-					<div class="search-logo">
-					<h1>Search Results</h1><br/>
-					</div>
-
-</div>
-<div id="container">
-	<div id="center" class="column">
-		<body>
-			<div class="selected_att"> Attributes:&nbsp; 
+<body>
+	<div class="navbar navbar-default navbar-static-top pNav">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand gold pFont logo">MAJESTIC CASUAL SEARCH</div>
+				<button type="button" class ="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar mobileIconBars"></span>
+					<span class="icon-bar mobileIconBars"></span>
+					<span class="icon-bar mobileIconBars"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="goldLink pFont norm" target="_blank" href="https://www.youtube.com/channel/UCXIyz409s7bNWVcM-vjfdVA"> Majestic Casual</a></li>
+					<li><a class="goldLink pFont norm" href="#"> Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container text-center pFont small-norm">Attributes:&nbsp; 
 			<c:forEach var="i" begin="0" end="${length - 1}"> 
 				${attributePreferences[i]}&nbsp;
 			</c:forEach>
@@ -37,7 +49,8 @@
 			</br>
 			</br>
 			
-		<div class="result">
+		<div class="container">
+			<div class="jumbotron pFont norm">
 			<c:choose>
 			
 				<c:when test = "${noResults == true}">
@@ -70,19 +83,22 @@
     				</c:otherwise>
     				
     		</c:choose>
+    		</div>
   	  </div>
   	  
   	  
   	  <form action="/">
-		<input type="submit" class="btn_search" value="back"/>
-	  </form>
-	  
+		<div class="navbar navbar-default navbar-fixed-bottom pNav">
+		<div class="container text-center">
 
+			<input type="submit" class="navbar-btn btn btn-inverse srch btn-sm pFont small-norm" name="back" value="back"/>
+
+			<a href="http://www.youtube.com/subscription_center?add_user=majesticcasual" target="_blank" class="navbar-btn btn-danger btn pull-right youtubeBtn btn-sm">Subscribe on Youtube</a>
+			<p class="navbar-text pull-left gold pFont small">© 2015 Zachary King</p>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bstrp/js/bootstrap.min.js" type="text/javascript"></script>
+	</form>
 	</body>
-  <div id="left" class="column">
-  </div>
-  <div id="right" class="column">
-  </div>
-  <div id="footer">
-  </div>
 </html>

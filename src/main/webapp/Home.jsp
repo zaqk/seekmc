@@ -448,7 +448,7 @@
 			<div class="container text-center">
 				<input type="submit" class="navbar-btn btn btn-inverse srch btn-sm pFont small-norm" name="submit" value="Search"/>
 				<p class="navbar-text pull-left gold pFont small">  © 2015 Zachary King</p>
-				<a href="http://www.youtube.com/subscription_center?add_user=majesticcasual" target="_blank" class="navbar-btn btn-danger btn pull-right youtubeBtn btn-sm">Subscribe on Youtube</a>
+				
 			</div>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

@@ -1,0 +1,55 @@
+.pFont  {
+    font-family: Baskerville,“Baskerville Old Face”,“Hoefler Text”,Garamond,“Times New Roman”,serif !important;
+}
+.logo{
+font-size: 25pt !important;
+}
+.norm{
+font-size: 15pt !important;
+}
+.small-norm{
+font-size: 12pt !important;
+}
+.small{
+font-size: 9pt !important;
+}
+.gold{
+color: #826128 !important;
+}
+.goldLink{
+color: #684d20 !important;
+}
+.goldLink:hover{
+color: #826128 !important;
+}
+.youtubeBtn{
+font-size:8pt !important;
+}
+.pNav{
+border-color: #4e3a18 !important ;
+}
+.bNav{
+border-color: #000000 !important ;
+}
+.mobileIconBars{
+background-color: #4e3a18 !important;
+}
+input[type="checkbox"]
+{
+    display:none;
+}
+.experimentalDropDown{
+	display:none;
+}
+.botHalfPos{
+	position:absolute;
+}
+.nowrap{
+	white-space:nowrap;
+}
+.noTopSpace{
+margin-top:0 !important;
+}
+.jumbotron{
+	background-color: #000000!important;
+}

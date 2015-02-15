@@ -206,7 +206,7 @@ public class PostgresConnect extends HttpServlet {
          + qryEthereal + " " + "AND" + " "
          + "jazz_influenced = " + " "
          + qryJazz_Influenced + " " + "AND" + " "
-         + "trap_influenced = " + " "
+         + "trap_influenced = " + " "	
          + qryTrap_Influenced + " " + "AND" + " "
          + "rnb_influenced = " + " "
          + qryRnb_Influenced + " " + "AND" + " "

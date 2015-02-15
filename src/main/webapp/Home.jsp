@@ -37,7 +37,7 @@
 				</div>
 					<div class="collapse navbar-collapse navHeaderCollapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a class="goldLink pFont norm" href="#"> Majestic Casual</a></li>
+							<li><a class="goldLink pFont norm" target="_blank" href="https://www.youtube.com/channel/UCXIyz409s7bNWVcM-vjfdVA"> Majestic Casual</a></li>
 							<li><a class="goldLink pFont norm" href="/about"> About</a></li>
 
 						</ul>

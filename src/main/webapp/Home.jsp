@@ -38,7 +38,7 @@
 					<div class="collapse navbar-collapse navHeaderCollapse">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a class="goldLink pFont norm" href="#"> Majestic Casual</a></li>
-							<li><a class="goldLink pFont norm" href="#"> About</a></li>
+							<li><a class="goldLink pFont norm" href="/about"> About</a></li>
 
 						</ul>
 					</div>
@@ -446,10 +446,9 @@
 		</div>
 		<div class="navbar navbar-default navbar-fixed-bottom pNav">
 			<div class="container text-center">
-					<input type="submit" class="navbar-btn btn btn-inverse srch btn-sm pFont small-norm" name="submit" value="Search"/>
-				<a class="navbar-btn btn-danger btn pull-right youtubeBtn btn-sm">Subscribe on Youtube</a>
-				
+				<input type="submit" class="navbar-btn btn btn-inverse srch btn-sm pFont small-norm" name="submit" value="Search"/>
 				<p class="navbar-text pull-left gold pFont small">  © 2015 Zachary King</p>
+				<a href="http://www.youtube.com/subscription_center?add_user=majesticcasual" target="_blank" class="navbar-btn btn-danger btn pull-right youtubeBtn btn-sm">Subscribe on Youtube</a>
 			</div>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

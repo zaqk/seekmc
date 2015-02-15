@@ -29,7 +29,7 @@
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a class="goldLink pFont norm" target="_blank" href="https://www.youtube.com/channel/UCXIyz409s7bNWVcM-vjfdVA"> Majestic Casual</a></li>
-						<li><a class="goldLink pFont norm" href="#"> Home</a></li>
+						<li><a class="goldLink pFont norm" href="/home"> Home</a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,16 +50,17 @@
 			</div>
 		</div>
 	
-	
-		<div class="navbar navbar-default navbar-fixed-bottom pNav">
-			<div class="container text-center">
-				<input type="submit" class="navbar-btn btn btn-inverse srch btn-sm pFont small-norm" name="back" value="back"/>
+		<form action="/">
+			<div class="navbar navbar-default navbar-fixed-bottom pNav">
+				<div class="container text-center">
 				
-				<a href="http://www.youtube.com/subscription_center?add_user=majesticcasual" target="_blank" class="navbar-btn btn-danger btn pull-right youtubeBtn btn-sm">Subscribe on Youtube</a>
-				<p class="navbar-text pull-left gold pFont small">  © 2015 Zachary King</p>
+					<input type="submit" class="navbar-btn btn btn-inverse srch btn-sm pFont small-norm" name="back" value="back"/>
+				
+					<a href="http://www.youtube.com/subscription_center?add_user=majesticcasual" target="_blank" class="navbar-btn btn-danger btn pull-right youtubeBtn btn-sm">Subscribe on Youtube</a>
+					<p class="navbar-text pull-left gold pFont small">  © 2015 Zachary King</p>
+				</div>
 			</div>
-		</div>
-
+		</form>	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="bstrp/js/bootstrap.js" type="text/javascript"></script>
 	

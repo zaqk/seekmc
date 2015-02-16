@@ -220,7 +220,10 @@ font-size: 13pt;
 }
 
 .video_link{
-color:#6E6527;
+color: #826128 !important;
+}
+.video_link:hover{
+color: #826128 !important;
 }
 
 .song_name{

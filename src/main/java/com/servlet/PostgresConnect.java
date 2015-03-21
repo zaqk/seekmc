@@ -66,7 +66,6 @@ public class PostgresConnect extends HttpServlet {
          String qryInstrumental = DecoderRing.INSTRUMENTAL;
          
          
-         
        //Search Engine---------------------------------------------------------------------------------
          
         

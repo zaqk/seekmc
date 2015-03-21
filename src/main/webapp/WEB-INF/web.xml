@@ -9,7 +9,7 @@
     	<welcome-file>Home.jsp</welcome-file>
   	</welcome-file-list>
     
-  	<servlet>
+  	<servlet> 
     	<servlet-name>hello</servlet-name>
     	<servlet-class>com.example.HelloServlet</servlet-class>
   	</servlet>

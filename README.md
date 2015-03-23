@@ -1,5 +1,8 @@
 ## This is a search engine for the Majestic Casual Youtube channel.
+It's based out of a jetty template. 
+It uses postgres for the database, jetty, maven. 
 
+It's in pretty rough shape at the moment, there's a lot of unused code so any simplification would be greatly appreciated.
 
 
 # Embedded Jetty template application

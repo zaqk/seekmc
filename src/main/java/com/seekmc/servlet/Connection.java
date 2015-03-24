@@ -1,4 +1,4 @@
-package com.servlet;
+package com.seekmc.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
 
-import com.converter.DecoderRing;
+import com.seekmc.converter.DecoderRing;
 
 
 

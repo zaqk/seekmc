@@ -1,4 +1,4 @@
-package com.servlet;
+package com.seekmc.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,9 +23,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.bean.ResultSetBean;
-import com.converter.DecoderRing;
-import com.db.Db;
+import com.seekmc.bean.ResultSetBean;
+import com.seekmc.converter.DecoderRing;
+import com.seekmc.db.Db;
 
 /**
  * Servlet implementation class PostgresConnectionn

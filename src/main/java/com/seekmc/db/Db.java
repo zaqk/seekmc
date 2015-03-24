@@ -1,4 +1,4 @@
-package com.db;
+package com.seekmc.db;
 
 import java.net.URI;
 import java.net.URISyntaxException;

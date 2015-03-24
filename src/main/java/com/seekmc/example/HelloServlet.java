@@ -1,4 +1,4 @@
-package com.example;
+package com.seekmc.example;
 
 import java.io.IOException;
 import java.util.logging.Logger;

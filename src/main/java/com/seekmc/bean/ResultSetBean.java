@@ -1,4 +1,4 @@
-package com.bean;
+package com.seekmc.bean;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

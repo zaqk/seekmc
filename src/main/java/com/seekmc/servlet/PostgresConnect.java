@@ -1,7 +1,7 @@
 package com.seekmc.servlet;
 
 import com.seekmc.converter.DecoderRing;
-import com.seekmc.db.Db;
+import com.seekmc.db.DB;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -34,7 +34,7 @@ public class PostgresConnect extends HttpServlet {
 
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = Db.getConnection();
+            Connection con = DB.getConnection();
 
             String qryExperimental = DecoderRing.EXPERIMENTAL;
             String qryHouse_Influenced = DecoderRing.HOUSE_INFLUENCED;

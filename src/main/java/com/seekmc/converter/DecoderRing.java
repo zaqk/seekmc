@@ -1,6 +1,6 @@
 package com.seekmc.converter;
 
-public class DecoderRing {
+public interface DecoderRing {
 
     public final static String EXPERIMENTAL = "experimental";
     public final static String HOUSE_INFLUENCED = "house_influenced";

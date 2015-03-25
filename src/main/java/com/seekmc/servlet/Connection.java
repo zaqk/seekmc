@@ -18,14 +18,9 @@ import java.sql.Statement;
 import java.util.Arrays;
 import java.util.List;
 
-//import javax.servlet.annotation.WebServlet;
-
-
-
 /**
  * Servlet implementation class Connection
  */
-//@WebServlet("/Connection")
 public class Connection extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -34,7 +29,6 @@ public class Connection extends HttpServlet {
      */
     public Connection() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     /**
@@ -47,10 +41,7 @@ public class Connection extends HttpServlet {
             envContext = new InitialContext();
             Context initContext = (Context) envContext.lookup("java:/comp/env");
             DataSource ds = (DataSource) initContext.lookup("jdbc/testDB");
-            // DataSource ds = (DataSource)envContext.lookup("java:/comp/env/jdbc/testDB");
             java.sql.Connection con = ds.getConnection();
-
-
 
             String qryExperimental = DecoderRing.EXPERIMENTAL;
             String qryHouse_Influenced = DecoderRing.HOUSE_INFLUENCED;
@@ -75,22 +66,12 @@ public class Connection extends HttpServlet {
             String qryHeavy_Vocal_Manipulation = DecoderRing.HEAVY_VOCAL_MANIPULATION;
             String qryInstrumental = DecoderRing.INSTRUMENTAL;
 
-
-
             //Search Engine---------------------------------------------------------------------------------
-
-
 
             String[] attributePreferences = request.getParameterValues("attributePreference");
 
-
             if (attributePreferences.length != 0) {
-
-                //response.sendRedirect("/MajesticX2/Search.jsp");
-                //this line makes submit button submit to Search page
-
                 List<String> attributePreferencesList = Arrays.asList(attributePreferences);
-
 
                 if (attributePreferencesList.contains(DecoderRing.EXPERIMENTAL)) {
                     qryExperimental = "\"1\"";

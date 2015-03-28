@@ -4,10 +4,8 @@ import com.seekmc.db.DB;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 
-import java.net.URISyntaxException;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
@@ -65,10 +63,7 @@ public class Main {
             Statement statement = conn.createStatement();
             ResultSet rs = statement.executeQuery("select count(*) from " + TABLE_NAME);
             rs.next();
-            Long count = rs.getLong(1);
-            if (count == null) {
-                throw new RuntimeException("Error communicating with DB");
-            }
+            long count = rs.getLong(1);
             log.info("Successfully connected to DB, counted " + count + " rows in " + TABLE_NAME);
         } catch (Exception e) {
             log.severe("Exception validating DB! " + e);

@@ -9,11 +9,6 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>hello</servlet-name>
-        <servlet-class>com.seekmc.example.HelloServlet</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>connection</servlet-name>
         <servlet-class>com.seekmc.servlet.Connection</servlet-class>
     </servlet>
@@ -32,11 +27,6 @@
         <servlet-name>home</servlet-name>
         <jsp-file>/Home.jsp</jsp-file>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>hello</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>connection</servlet-name>

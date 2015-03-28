@@ -263,7 +263,6 @@ public class PostgresConnect extends HttpServlet {
             e.printStackTrace();
             out.print(" URI ");
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

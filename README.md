@@ -4,8 +4,15 @@ It uses postgres for the database, jetty, maven.
 
 It's in pretty rough shape at the moment, there's a lot of unused code so any simplification would be greatly appreciated.
 
-Improvments I would like to add more unit tests, query parameterization, a framework (spring boot), more logging (log4j),
-liquibase, youtube api integration, travis integration, and improve readability of the main servlet (PostgresConnect.java) by seperating it up into different classes.
+Improvments I would like to add:
+-more unit tests
+-query parameterization
+-a framework (spring boot)
+-more logging (log4j),
+-liquibase
+-youtube api integration
+-travis integration
+-improve readability of the main servlet (PostgresConnect.java) by seperating it up into different classes.
 
 
 ## Running the application locally

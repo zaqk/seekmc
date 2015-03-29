@@ -4,10 +4,9 @@ It uses postgres for the database, jetty, maven.
 
 It's in pretty rough shape at the moment, there's a lot of unused code so any simplification would be greatly appreciated.
 
+Improvments I would like to add more unit tests, query parameterization, a framework (spring boot), more logging (log4j),
+liquibase, youtube api integration, travis integration, and improve readability of the main servlet (PostgresConnect.java) by seperating it up into different classes.
 
-# Embedded Jetty template application
-
-This is a template for a web application that uses embedded Jetty. The sample code consists of a JSP (this page) and a simple servlet.
 
 ## Running the application locally
 

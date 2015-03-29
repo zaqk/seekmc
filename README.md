@@ -8,7 +8,7 @@ Improvments I would like to add:
 -more unit tests
 -query parameterization
 -a framework (spring boot)
--more logging (log4j),
+-more logging (log4j)
 -liquibase
 -youtube api integration
 -travis integration

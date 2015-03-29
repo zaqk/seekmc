@@ -20,9 +20,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Servlet implementation class PostgresConnectionn
- */
 public class PostgresConnect extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -249,8 +246,7 @@ public class PostgresConnect extends HttpServlet {
 
 
 
-            //------------------------------What page should we send user to?----------------------------------
-            getServletConfig().getServletContext();
+            //------------------------------Send to Search.jsp----------------------------------
 
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Search.jsp");
             dispatcher.forward(request, response);

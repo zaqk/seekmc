@@ -62,7 +62,7 @@ public class PostgresConnect extends HttpServlet {
             String[] attributePreferences = request.getParameterValues("attributePreference");
 
 
-            int arrayLength = 1;
+            int numberOfAttributes = 1;
 
 
             boolean emptyArray = true;
@@ -72,7 +72,7 @@ public class PostgresConnect extends HttpServlet {
 
                 List<String> attributePreferencesList = Arrays.asList(attributePreferences);
 
-                arrayLength = attributePreferences.length;
+                numberOfAttributes = attributePreferences.length;
 
                 if (attributePreferencesList.contains(DecoderRing.EXPERIMENTAL)) {
                     qryExperimental = "1::bit";
@@ -193,7 +193,7 @@ public class PostgresConnect extends HttpServlet {
 
             List<String> initialLinkNameList = new ArrayList<String>();
 
-            boolean noResults = false;
+            boolean noResults = false;//no results is true if search is too specific
 
             if (!rs.isBeforeFirst()) {
 
@@ -238,11 +238,13 @@ public class PostgresConnect extends HttpServlet {
 
             session.setAttribute("noResults", noResults);
             session.setAttribute("attributePreferences", attributePreferences);
-            session.setAttribute("length", arrayLength);
+            session.setAttribute("emptyArray", emptyArray);
+            session.setAttribute("length", numberOfAttributes);
+            
+            //SQL dependent attributes
             session.setAttribute("songListLength", songListLength);
             session.setAttribute("songNameArray", songNameArray);
             session.setAttribute("linkArray", linkArray);
-            session.setAttribute("emptyArray", emptyArray);
 
 
 

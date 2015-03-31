@@ -21,6 +21,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import com.seekmc.converter.DecoderRing;
+
 
 public class PostgresConnectTest extends Mockito{
 	 private HttpServletRequest request = mock(HttpServletRequest.class);       
@@ -40,10 +42,10 @@ public class PostgresConnectTest extends Mockito{
 		
 		String path = "C:\\repo\\java\\seekmcDB.txt";
 		/*
-		Save database url into a blank file 
-		then set path to file in String above to run unit tests against the database.
-		Contact me directly for url.
-		*/
+		 *		Save database url into a blank file 
+		 *		then set path to file in String above to run unit tests against the database.
+		 *		Contact me directly for url.
+		 */
 	
 		String dbURL = new String(Files.readAllBytes(Paths.get(path)));
 		Map<String, String> dbEnv = new HashMap<String, String>();
@@ -54,20 +56,68 @@ public class PostgresConnectTest extends Mockito{
 	}
 	
 	@Test
-	public void shouldNotReturnSongs() throws ServletException, IOException {
+	public void shouldNotReturnResults() throws ServletException, IOException {
 
-	     String[] attributePreference = null;
+	     String[] attributePreferences = null;
 	     
 	     when(request.getSession()).thenReturn(session);
-	     when(request.getParameterValues("attributePreference")).thenReturn(attributePreference);
-	     when(servlet.getServletContext().getRequestDispatcher("/Search.jsp")).thenReturn(dispatcher);
+	     when(request.getParameterValues("attributePreference"))
+	     .thenReturn(attributePreferences);
+	     when(servlet.getServletContext().getRequestDispatcher("/Search.jsp"))
+	     .thenReturn(dispatcher);
 	    
 	     servlet.doPost(request, response);
 	     
-	     ;
-	     
+	     verify(session).setAttribute("noResults", false);
+	     verify(session).setAttribute("attributePreferences", null);
 	     verify(session).setAttribute("emptyArray", true);
-
+	     verify(session).setAttribute("length", 1);
+	     
+	    
+	     /*
+	      * 	"length" is 1 instead of 0 because a 
+	      *		dummy value is set to avoid a ArrayOutOfBoundsException 
+	      *		there should be a cleaner way to avoid this exception
+	      */
+	     
+	}
+	
+	@Test
+	public void shouldReturnExperimental() throws ServletException, IOException {
+		
+		String[] attributePreferences = {"experimental"};
+		
+		when(request.getSession()).thenReturn(session);
+	    when(request.getParameterValues("attributePreference"))
+	    .thenReturn(attributePreferences);
+	    when(servlet.getServletContext().getRequestDispatcher("/Search.jsp"))
+	    .thenReturn(dispatcher);
+		
+	    servlet.doPost(request, response);
+	    
+	    verify(session).setAttribute("noResults", false);
+	    verify(session).setAttribute("attributePreferences", attributePreferences);
+	    verify(session).setAttribute("emptyArray", false);
+	    verify(session).setAttribute("length", 1);
+	}
+	
+	@Test
+	public void shouldReturnExperimentalAndIndie() throws ServletException, IOException {
+		
+		String[] attributePreferences = {"experimental", "Indie"};
+		
+		when(request.getSession()).thenReturn(session);
+	    when(request.getParameterValues("attributePreference"))
+	    .thenReturn(attributePreferences);
+	    when(servlet.getServletContext().getRequestDispatcher("/Search.jsp"))
+	    .thenReturn(dispatcher);
+		
+	    servlet.doPost(request, response);
+	    
+	    verify(session).setAttribute("noResults", false);
+	    verify(session).setAttribute("attributePreferences", attributePreferences);
+	    verify(session).setAttribute("emptyArray", false);
+	    verify(session).setAttribute("length", 2);
 	}
 
 }

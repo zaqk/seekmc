@@ -43,7 +43,7 @@ public class PostgresConnect extends HttpServlet {
             String qryEnergetic = DecoderRing.ENERGETIC;
             String qryCalm = DecoderRing.CALM;
             String qryAggressive = DecoderRing.AGGRESSIVE;
-            String qryEthereal = DecoderRing.ETHEREAL;//note spelling error string=etheral
+            String qryEthereal = DecoderRing.ETHEREAL;
             String qryJazz_Influenced = DecoderRing.JAZZ_INFLUENCED;
             String qryTrap_Influenced = DecoderRing.TRAP_INFLUENCED;
             String qryRnb_Influenced = DecoderRing.RNB_INFLUENCED;
@@ -186,7 +186,10 @@ public class PostgresConnect extends HttpServlet {
                     + qryFemale_Vocals + " " + "AND" + " " + "heavy_vocal_manipulation = " + " "
                     + qryHeavy_Vocal_Manipulation + " " + "AND" + " " + "instrumental = " + " "
                     + qryInstrumental + " " + "AND" + " " + "id = id" + ";";
-
+            		//^^^this needs to take place in a separate class.
+            
+            
+            
             ResultSet rs = stmt.executeQuery(query);
 
             List<String> initialSongNameList = new ArrayList<String>();
@@ -236,7 +239,7 @@ public class PostgresConnect extends HttpServlet {
 
             HttpSession session = request.getSession();
 
-            session.setAttribute("noResults", noResults);
+            //non-SQL dependent attributes
             session.setAttribute("attributePreferences", attributePreferences);
             session.setAttribute("emptyArray", emptyArray);
             session.setAttribute("length", numberOfAttributes);
@@ -245,6 +248,7 @@ public class PostgresConnect extends HttpServlet {
             session.setAttribute("songListLength", songListLength);
             session.setAttribute("songNameArray", songNameArray);
             session.setAttribute("linkArray", linkArray);
+            session.setAttribute("noResults", noResults);
 
 
 

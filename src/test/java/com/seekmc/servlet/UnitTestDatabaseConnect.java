@@ -9,6 +9,9 @@ import java.util.Map;
 
 
 public class UnitTestDatabaseConnect {
+	
+	public static final String PATH = "C:\\repo\\java\\seekmcDB.txt";//SET THIS IN DB
+	
 	protected static void setEnv(Map<String, String> newenv)
 	{
 	  try
@@ -20,7 +23,7 @@ public class UnitTestDatabaseConnect {
 	        env.putAll(newenv);
 	        Field theCaseInsensitiveEnvironmentField = processEnvironmentClass.getDeclaredField("theCaseInsensitiveEnvironment");
 	        theCaseInsensitiveEnvironmentField.setAccessible(true);
-	        Map<String, String> cienv = (Map<String, String>)     theCaseInsensitiveEnvironmentField.get(null);
+	        Map<String, String> cienv = (Map<String, String>) theCaseInsensitiveEnvironmentField.get(null);
 	        cienv.putAll(newenv);
 	    }
 	    catch (NoSuchFieldException e)

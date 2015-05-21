@@ -1,6 +1,7 @@
 package com.seekmc.servlet;
 
 import com.seekmc.converter.DecoderRing;
+import com.seekmc.converter.VideoIdExtractor;
 import com.seekmc.db.DB;
 
 import javax.servlet.RequestDispatcher;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
@@ -195,14 +197,19 @@ public class PostgresConnect extends HttpServlet {
             List<String> initialSongNameList = new ArrayList<String>();
 
             List<String> initialLinkNameList = new ArrayList<String>();
+            
+            List<String> initialVideoIdList = new ArrayList<String>();//for displaying thumbnails
 
             boolean noResults = false;//no results is true if search is too specific
-
+            
+            VideoIdExtractor videoIdExtractor = new VideoIdExtractor();
+            
             if (!rs.isBeforeFirst()) {
 
                 noResults = true;
                 initialSongNameList.add("null");
                 initialLinkNameList.add("null");
+                initialVideoIdList.add("null");
                 //if Array is empty the html page will display an ugly error
                 //if noResults is true html page will display a more fitting error message.
 
@@ -216,9 +223,11 @@ public class PostgresConnect extends HttpServlet {
                 while (rs.next()) {
                     String songName = rs.getString("song_name");
                     String linkName = rs.getString("link");
+                    String videoId = videoIdExtractor.getVideoId(rs.getString("link"));
 
                     initialSongNameList.add(songName);
                     initialLinkNameList.add(linkName);
+                    initialVideoIdList.add(videoId);
 
                 }
             }
@@ -229,6 +238,9 @@ public class PostgresConnect extends HttpServlet {
 
             String[] linkArray =
                 initialLinkNameList.toArray(new String[initialLinkNameList.size()]);
+            
+            String[] videoIdArray =
+                    initialVideoIdList.toArray(new String[initialVideoIdList.size()]);
 
 
             int songListLength = songNameArray.length;
@@ -248,6 +260,7 @@ public class PostgresConnect extends HttpServlet {
             session.setAttribute("songListLength", songListLength);
             session.setAttribute("songNameArray", songNameArray);
             session.setAttribute("linkArray", linkArray);
+            session.setAttribute("videoIdArray", videoIdArray);
             session.setAttribute("noResults", noResults);
 
 

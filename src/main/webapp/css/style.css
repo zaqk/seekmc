@@ -102,10 +102,16 @@ color: #826128 !important;
 .song_name{
 	display:inline;
 	white-space:nowrap;
+	vertical-align: top;
 	
 }
 .search_back{
 	display:inline;
 	position:relative;
 	bottom:10%;
+}
+/* list */
+
+#list_object{
+	list-style-type:none;
 }

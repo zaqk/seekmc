@@ -17,7 +17,7 @@ public class DecoderRing {
     public final static String ETHEREAL = "ethereal";
     public final static String JAZZ_INFLUENCED = "jazz_influenced";
     public final static String TRAP_INFLUENCED = "trap_influenced";
-    public final static String RNB_INFLUENCED = "rnb_influenced";//possible problems with & symbol
+    public final static String RNB_INFLUENCED = "rnb_influenced";
     public final static String FUNK_INFLUENCED = "funk_influenced";
     public final static String OLD_SCHOOL_VIBES = "old_school_vibes";
     public final static String MALE_VOCALS = "male_vocals";

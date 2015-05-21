@@ -65,21 +65,24 @@
 					</div>
 					</c:when>
 					<c:otherwise> 
-    					<c:forEach var="i" begin="0" end="${songListLength - 1}">  
- 							<div class="song">
-  								<div class="song_name">
-									${i + 1}. Song Name:  ${songNameArray[i]} 
-								</div>
+					   <ul>
+    						<c:forEach var="i" begin="0" end="${songListLength - 1}">  
+ 								<li id="list_object" class="song">
+ 									<div class="container">
+ 										<a href ="${linkArray[i]}" class="video_link" target="_blank"><img width="300" height="140" src="http://img.youtube.com/vi/${videoIdArray[i]}/maxresdefault.jpg"/></a>
+  										<span class="song_name">
+											<a href ="${linkArray[i]}" class="video_link" target="_blank">${songNameArray[i]}</a> 
+										</span>
+									</div>
 									</br>
 									</br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;Link: &nbsp;<a href ="${linkArray[i]}" class="video_link" target="_blank">${linkArray[i]}</a>
-									
 									</br>
 									</br>
 									</br>
-							</div>
-    					</c:forEach>
+								
+								</li>
+    						</c:forEach>
+    					</ul>
     				</c:otherwise>
     				
     		</c:choose>

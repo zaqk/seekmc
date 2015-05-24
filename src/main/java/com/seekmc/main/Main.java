@@ -1,4 +1,4 @@
-package com.seekmc.example;
+package com.seekmc.main;
 
 import com.seekmc.db.DB;
 import org.eclipse.jetty.server.Server;

@@ -16,7 +16,7 @@ First build with:
 
 Then run it with:
 
-    $java -cp target/classes:target/dependency/* com.seekmc.example.Main
+    $java -cp target/classes:target/dependency/* com.seekmc.main.Main
     
 
 

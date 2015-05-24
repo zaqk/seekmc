@@ -10,7 +10,7 @@
 
     <servlet>
         <servlet-name>p</servlet-name>
-        <servlet-class>com.seekmc.servlet.PostgresConnect</servlet-class>
+        <servlet-class>com.seekmc.servlet.Search</servlet-class>
     </servlet>
 
     <servlet>

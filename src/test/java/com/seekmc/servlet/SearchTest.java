@@ -19,14 +19,14 @@ import org.mockito.Mockito;
 
 
 
-public class PostgresConnectTest extends Mockito{
+public class SearchTest extends Mockito{
 	 private HttpServletRequest request = mock(HttpServletRequest.class);       
 	 private HttpServletResponse response = mock(HttpServletResponse.class);
 	 private HttpSession session = mock(HttpSession.class);
 	 private RequestDispatcher dispatcher = mock(RequestDispatcher.class);
 	 private final ServletContext servletContext = mock(ServletContext.class);
 	 
-	 private PostgresConnect servlet = new PostgresConnect(){
+	 private Search servlet = new Search(){
 			public ServletContext getServletContext(){
 	    		 return servletContext;
 	    	 }

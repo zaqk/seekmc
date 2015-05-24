@@ -1,16 +1,12 @@
 package com.seekmc.servlet;
 
-import static org.junit.Assert.*;
-
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +17,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import com.seekmc.converter.DecoderRing;
 
 
 public class PostgresConnectTest extends Mockito{
@@ -118,5 +113,4 @@ public class PostgresConnectTest extends Mockito{
 	    verify(session).setAttribute("emptyArray", false);
 	    verify(session).setAttribute("length", 9);
 	}
-
 }

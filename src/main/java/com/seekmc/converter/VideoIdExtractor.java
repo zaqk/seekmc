@@ -8,8 +8,8 @@ public class VideoIdExtractor {
 		
 		for(int i = 0, n = youtubeLink.length() ; i < n ; i++) { 
 		    char c = youtubeLink.charAt(i);
-		    if(c == '?'){
-		    	id = youtubeLink.substring(i+3, i+14);
+		    if(c == 'v'){
+		    	id = youtubeLink.substring(i+2, i+13);
 		    	break;
 		    }
 		}

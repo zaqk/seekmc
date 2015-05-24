@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -62,14 +63,41 @@ public class PostgresConnect extends HttpServlet {
 
 
             String[] attributePreferences = request.getParameterValues("attributePreference");
-
+            
 
             int numberOfAttributes = 1;
 
 
             boolean emptyArray = true;
-
-
+            
+           /* String query = "SELECT * FROM main WHERE "
+            		+ "experimental = ? AND "
+                    + "house_influenced = ? AND "
+                    + "hip_hop_influenced = ? AND "
+                    + "indie_influenced = ? AND "
+                    + "deep_house = ? AND "
+                    + "hip_hop = ? AND "
+                    + "indie = ? AND "
+                    + "heavy_sub_bass = ? AND "
+                    + "poppy = ? AND "
+                    + "energetic = ? AND "
+                    + "calm = ? AND "
+                    + "aggressive = ? AND "
+                    + "ethereal = ? AND "
+                    + "jazz_influenced = ? AND "
+                    + "trap_influenced = ? AND "
+                    + "rnb_influenced = ? AND "
+                    + "funk_influenced = ? AND "
+                    + "old_school_vibes = ? AND "
+                    + "male_vocals = ? AND "
+                    + "female_vocals = ? AND "
+                    + "heavy_vocal_manipulation = ? AND "
+                    + "instrumental = ? AND "
+                    + "id = id;";
+                    
+                    PreparedStatement stmt = con.prepareStatement(query);
+                    */
+            
             if (attributePreferences != null) {
 
                 List<String> attributePreferencesList = Arrays.asList(attributePreferences);
@@ -166,6 +194,8 @@ public class PostgresConnect extends HttpServlet {
                 }
 
             }
+            
+            
             Statement stmt = con.createStatement();
             String query =
                 "SELECT * FROM main WHERE " + "experimental = " + qryExperimental + " " + "AND"
@@ -188,9 +218,7 @@ public class PostgresConnect extends HttpServlet {
                     + qryFemale_Vocals + " " + "AND" + " " + "heavy_vocal_manipulation = " + " "
                     + qryHeavy_Vocal_Manipulation + " " + "AND" + " " + "instrumental = " + " "
                     + qryInstrumental + " " + "AND" + " " + "id = id" + ";";
-            		//^^^this needs to take place in a separate class.
-            
-            
+            		//^^^this needs to take place in a prepared statement.
             
             ResultSet rs = stmt.executeQuery(query);
 

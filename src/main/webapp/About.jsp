@@ -5,6 +5,7 @@
 		<link href="bstrp/css/bootstrap.css" type="text/css" rel="stylesheet"></link>
 		<link href="bstrp/css/style.css" type="text/css" rel="stylesheet"></link>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut icon" href="http://twinstripe.com/DL/skull-5.jpg">
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

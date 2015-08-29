@@ -4,8 +4,12 @@ import java.lang.reflect.Field;
 import java.util.Collections;
 import java.util.Map;
 
-
-
+/*
+Sets environment variables for connection to db. 
+More of a hack than a viable solution but it helps us test.
+Solution found here:
+http://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java
+*/
 
 
 public class UnitTestDatabaseConnect {

@@ -79,9 +79,9 @@ public class SearchTest extends Mockito{
 	@Test
 	public void shouldReturnExperimental() throws ServletException, IOException {
 		
-		String[] attributePreferences = {"experimental"};
+	    String[] attributePreferences = {"experimental"};
 		
-		when(request.getSession()).thenReturn(session);
+            when(request.getSession()).thenReturn(session);
 	    when(request.getParameterValues("attributePreference"))
 	    .thenReturn(attributePreferences);
 	    when(servlet.getServletContext().getRequestDispatcher("/Search.jsp"))
@@ -97,11 +97,11 @@ public class SearchTest extends Mockito{
 	@Test
 	public void shouldReturnMultipleSongAttributes() throws ServletException, IOException {
 		
-		String[] attributePreferences = {"experimental", "indie", "deep_house",
-										"male_vocals", "calm", "hip_hop", "ethereal",
-										"jazz_influenced", "rnb_influenced"};
+	    String[] attributePreferences = {"experimental", "indie", "deep_house",
+					     "male_vocals", "calm", "hip_hop", "ethereal",
+					     "jazz_influenced", "rnb_influenced"};
 		
-		when(request.getSession()).thenReturn(session);
+	    when(request.getSession()).thenReturn(session);
 	    when(request.getParameterValues("attributePreference"))
 	    .thenReturn(attributePreferences);
 	    when(servlet.getServletContext().getRequestDispatcher("/Search.jsp"))

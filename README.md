@@ -1,4 +1,4 @@
-## This is a search engine for the Majestic Casual Youtube channel.
+## Search engine for the Majestic Casual Youtube channel.
 This project is based out of a jetty template. 
 It uses postgres, jetty, and maven. 
 

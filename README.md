@@ -1,5 +1,7 @@
-## Search engine for the Majestic Casual Youtube channel.
-This project is based out of a jetty template. 
+#Seekmc
+## about.
+This project is a search engine for the Majestic Casual Youtube channel.
+Based out of a jetty template. 
 It uses postgres, jetty, and maven. 
 
 It's in pretty rough shape at the moment, there's a lot of unused code so any simplification would be greatly appreciated.

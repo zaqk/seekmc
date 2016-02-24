@@ -38,7 +38,7 @@ public class SearchTest extends Mockito{
 		String path = "C:\\repo\\java\\seekmcDB.txt";
 		/**
 		 *		Save database url into a blank file 
-		 *		then set path to file in String above to run unit tests against the database.
+		 *		then set path to file in String above to run integration tests against the database.
 		 *		Contact me directly for url.
 		 */
 	
